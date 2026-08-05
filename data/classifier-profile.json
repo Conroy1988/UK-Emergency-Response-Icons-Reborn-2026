@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "thresholds": {
+    "1": "score < 4.2",
+    "2": "4.2 <= score < 10",
+    "3": "10 <= score < 21",
+    "4": "21 <= score < 50",
+    "5": "score >= 50"
+  },
+  "slot_level_distribution": {
+    "1": 207,
+    "2": 211,
+    "3": 200,
+    "4": 177,
+    "5": 71
+  },
+  "record_level_distribution": {
+    "1": 206,
+    "2": 216,
+    "3": 211,
+    "4": 248,
+    "5": 182
+  },
+  "family_distribution": {
+    "aircraft": 15,
+    "animal": 19,
+    "cardiac": 11,
+    "collapse": 10,
+    "collision": 23,
+    "crime": 32,
+    "crowd": 36,
+    "eod": 32,
+    "fire": 273,
+    "hazmat": 26,
+    "marine": 36,
+    "medical": 130,
+    "mountain": 11,
+    "police": 95,
+    "rail": 41,
+    "rescue": 26,
+    "response": 14,
+    "utilities": 2,
+    "weather": 34
+  },
+  "service_distribution": {
+    "ambulance": 149,
+    "fire": 404,
+    "marine": 40,
+    "mixed": 54,
+    "mountain": 8,
+    "police": 211
+  }
+}

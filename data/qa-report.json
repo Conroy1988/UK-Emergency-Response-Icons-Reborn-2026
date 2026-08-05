@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "all_passed": true,
+  "catalogue_record_count": 1063,
+  "official_slot_count": 864,
+  "active_slot_count": 827,
+  "legacy_slot_count": 37,
+  "special_slot_count": 2,
+  "upload_slot_count": 866,
+  "image_count": 2598,
+  "level_distribution": {
+    "1": 207,
+    "2": 211,
+    "3": 200,
+    "4": 177,
+    "5": 71
+  },
+  "family_distribution": {
+    "aircraft": 15,
+    "animal": 19,
+    "cardiac": 11,
+    "collapse": 10,
+    "collision": 23,
+    "crime": 32,
+    "crowd": 36,
+    "eod": 32,
+    "fire": 273,
+    "hazmat": 26,
+    "marine": 36,
+    "medical": 130,
+    "mountain": 11,
+    "police": 95,
+    "rail": 41,
+    "rescue": 26,
+    "response": 14,
+    "utilities": 2,
+    "weather": 34
+  },
+  "checks": [
+    {
+      "name": "catalogue_record_count",
+      "passed": true,
+      "detail": "1063"
+    },
+    {
+      "name": "unique_mission_ids",
+      "passed": true,
+      "detail": "1063"
+    },
+    {
+      "name": "official_slot_count",
+      "passed": true,
+      "detail": "864"
+    },
+    {
+      "name": "active_slot_count",
+      "passed": true,
+      "detail": "827"
+    },
+    {
+      "name": "legacy_slot_count",
+      "passed": true,
+      "detail": "37"
+    },
+    {
+      "name": "special_slot_count",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "contiguous_official_slots",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "unique_upload_slots",
+      "passed": true,
+      "detail": "866"
+    },
+    {
+      "name": "every_record_mapped_once",
+      "passed": true,
+      "detail": "1063 mappings"
+    },
+    {
+      "name": "all_levels_present",
+      "passed": true,
+      "detail": "Counter({2: 211, 1: 207, 3: 200, 4: 177, 5: 71})"
+    },
+    {
+      "name": "all_states_declared",
+      "passed": true,
+      "detail": "{'red': '#ff4d5a', 'yellow': '#ffc857', 'green': '#3bd672'}"
+    },
+    {
+      "name": "three_files_per_slot",
+      "passed": true,
+      "detail": "2598 files"
+    },
+    {
+      "name": "png_integrity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "state_separation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "half_scale_map_visibility",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "unique_render_hashes",
+      "passed": true,
+      "detail": "435 distinct renders"
+    }
+  ],
+  "errors": []
+}
