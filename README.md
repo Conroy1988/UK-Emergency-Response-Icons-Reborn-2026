@@ -1,7 +1,7 @@
 # UK Emergency Response Icons Reborn 2026
 
 [![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C063-6d5dfc)](data/mission-manifest.json)
-[![Graphics](https://img.shields.io/badge/status_graphics-2%2C598-22c55e)](GALLERY.md)
+[![Graphics](https://img.shields.io/badge/status_graphics-2%2C610-22c55e)](GALLERY.md)
 [![QA](https://img.shields.io/badge/automated_QA-passing-22c55e)](data/qa-report.json)
 [![Licence](https://img.shields.io/badge/artwork-CC_BY--NC--SA_4.0-f59e0b)](LICENSE.md)
 
