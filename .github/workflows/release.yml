@@ -26,7 +26,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
-            gh release upload "$GITHUB_REF_NAME" dist/* --clobber
+            gh release upload "$GITHUB_REF_NAME" dist/*"$GITHUB_REF_NAME"* --clobber
           else
-            gh release create "$GITHUB_REF_NAME" dist/* --generate-notes --title "UK Emergency Response Icons Reborn 2026 $GITHUB_REF_NAME"
+            gh release create "$GITHUB_REF_NAME" dist/*"$GITHUB_REF_NAME"* --generate-notes --title "UK Emergency Response Icons Reborn 2026 $GITHUB_REF_NAME"
           fi
