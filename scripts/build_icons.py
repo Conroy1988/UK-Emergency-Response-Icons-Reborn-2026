@@ -309,11 +309,17 @@ def build(source: Path, root: Path) -> None:
 
     legacy_payload=json.loads((root/"data"/"legacy-slots.json").read_text(encoding="utf-8"))
     legacy={slot["slot_id"]:slot for slot in legacy_payload["slots"]}
+    provisional_payload=json.loads((root/"data"/"provisional-slots.json").read_text(encoding="utf-8"))
+    provisional={slot["slot_id"]:slot for slot in provisional_payload["slots"]}
     active_slot_count=len(groups)
-    numeric_slots=[str(value) for value in range(864)]
+    numeric_ids=[int(value) for value in groups if value.isdigit()]
+    declared_ids=[int(value) for value in provisional if value.isdigit()]
+    numeric_slot_count=max(numeric_ids+declared_ids)+1
+    numeric_slots=[str(value) for value in range(numeric_slot_count)]
     missing=sorted(set(numeric_slots)-set(groups),key=int)
-    if missing!=sorted(legacy,key=int):
-        raise SystemExit(f"Legacy slot index does not exactly cover inactive MissionChief slots: {missing}")
+    uncovered=sorted(set(missing)-set(legacy)-set(provisional),key=int)
+    if uncovered:
+        raise SystemExit(f"Inactive MissionChief slots are not declared as legacy or provisional: {uncovered}")
 
     slot_specs=[
         {"slot_id":"handoff","name":"Hand-off Mission","source_kind":"special","mission_ids":[],"variant_count":0,"level":2,"score":0.0,"components":{},"primary_service":"mixed","services":["mixed"],"family":"response","categories":[]},
@@ -329,6 +335,14 @@ def build(source: Path, root: Path) -> None:
                 "variant_count":len(members),"level":maximum["level"],"score":maximum["score"],"components":maximum["components"],
                 "max_level_source_mission_id":maximum["mission_id"],"primary_service":canonical["primary_service"],"services":canonical["services"],
                 "family":canonical["family"],"categories":sorted({category for member in members for category in member["categories"]}),
+            })
+        elif slot_id in provisional:
+            retained=provisional[slot_id]
+            slot_specs.append({
+                "slot_id":slot_id,"name":retained["name"],"source_kind":"provisional","mission_ids":[],"variant_count":0,
+                "level":retained["level"],"score":0.0,"components":{},"max_level_source_mission_id":None,
+                "primary_service":retained["primary_service"],"services":retained["services"],"family":retained["family"],
+                "categories":retained.get("categories",[]),"provisional_rationale":retained["rationale"],
             })
         else:
             retained=legacy[slot_id]
@@ -359,6 +373,8 @@ def build(source: Path, root: Path) -> None:
         "official_slot_count":len(numeric_slots),
         "active_slot_count":active_slot_count,
         "legacy_slot_count":len(legacy),
+        "provisional_slot_count":sum(slot["source_kind"]=="provisional" for slot in manifest_slots),
+        "published_official_slot_count":sum(slot["source_kind"] in {"official","legacy"} for slot in manifest_slots),
         "special_slot_count":2,
         "upload_slot_count":len(manifest_slots),
         "catalogue_sha256":payload["source_sha256"],

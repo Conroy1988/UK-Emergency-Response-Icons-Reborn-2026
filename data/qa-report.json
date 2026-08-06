@@ -2,15 +2,17 @@
   "schema_version": 1,
   "all_passed": true,
   "catalogue_record_count": 1063,
-  "official_slot_count": 864,
+  "official_slot_count": 868,
   "active_slot_count": 827,
   "legacy_slot_count": 37,
+  "provisional_slot_count": 4,
+  "published_official_slot_count": 864,
   "special_slot_count": 2,
-  "upload_slot_count": 866,
-  "image_count": 2598,
+  "upload_slot_count": 870,
+  "image_count": 2610,
   "level_distribution": {
-    "1": 207,
-    "2": 211,
+    "1": 209,
+    "2": 213,
     "3": 200,
     "4": 177,
     "5": 71
@@ -26,8 +28,8 @@
     "eod": 32,
     "fire": 273,
     "hazmat": 26,
-    "marine": 36,
-    "medical": 130,
+    "marine": 38,
+    "medical": 132,
     "mountain": 11,
     "police": 95,
     "rail": 41,
@@ -50,6 +52,11 @@
     {
       "name": "official_slot_count",
       "passed": true,
+      "detail": "868"
+    },
+    {
+      "name": "published_official_slot_count",
+      "passed": true,
       "detail": "864"
     },
     {
@@ -61,6 +68,11 @@
       "name": "legacy_slot_count",
       "passed": true,
       "detail": "37"
+    },
+    {
+      "name": "provisional_slot_count",
+      "passed": true,
+      "detail": "4"
     },
     {
       "name": "special_slot_count",
@@ -75,7 +87,7 @@
     {
       "name": "unique_upload_slots",
       "passed": true,
-      "detail": "866"
+      "detail": "870"
     },
     {
       "name": "every_record_mapped_once",
@@ -85,7 +97,7 @@
     {
       "name": "all_levels_present",
       "passed": true,
-      "detail": "Counter({2: 211, 1: 207, 3: 200, 4: 177, 5: 71})"
+      "detail": "Counter({2: 213, 1: 209, 3: 200, 4: 177, 5: 71})"
     },
     {
       "name": "all_states_declared",
@@ -95,7 +107,7 @@
     {
       "name": "three_files_per_slot",
       "passed": true,
-      "detail": "2598 files"
+      "detail": "2610 files"
     },
     {
       "name": "png_integrity",

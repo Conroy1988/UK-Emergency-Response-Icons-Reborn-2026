@@ -5,19 +5,21 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import zipfile
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/"dist"
-NAME="UK-Emergency-Response-Icons-Reborn-2026-v1.0.0.zip"
+VERSION=(os.environ.get("PACK_VERSION") or os.environ.get("GITHUB_REF_NAME") or "v1.0.1").removeprefix("v")
+NAME=f"UK-Emergency-Response-Icons-Reborn-2026-v{VERSION}.zip"
 
 
 def main() -> None:
     report=json.loads((ROOT/"data"/"qa-report.json").read_text())
     if not report.get("all_passed"): raise SystemExit("QA report is not green")
     DIST.mkdir(exist_ok=True); target=DIST/NAME
-    include=[ROOT/"assets"/"icons",ROOT/"assets"/"previews",ROOT/"data"/"mission-manifest.json",ROOT/"data"/"mission-manifest.csv",ROOT/"data"/"classifier-profile.json",ROOT/"data"/"legacy-slots.json",ROOT/"data"/"qa-report.json",ROOT/"docs"/"CLASSIFICATION.md",ROOT/"docs"/"STYLE_GUIDE.md",ROOT/"README.md",ROOT/"LICENSE.md"]
+    include=[ROOT/"assets"/"icons",ROOT/"assets"/"previews",ROOT/"data"/"mission-manifest.json",ROOT/"data"/"mission-manifest.csv",ROOT/"data"/"classifier-profile.json",ROOT/"data"/"legacy-slots.json",ROOT/"data"/"provisional-slots.json",ROOT/"data"/"qa-report.json",ROOT/"docs"/"CLASSIFICATION.md",ROOT/"docs"/"STYLE_GUIDE.md",ROOT/"README.md",ROOT/"LICENSE.md"]
     files=[]
     for item in include:
         files.extend(sorted(p for p in item.rglob("*") if p.is_file())) if item.is_dir() else files.append(item)

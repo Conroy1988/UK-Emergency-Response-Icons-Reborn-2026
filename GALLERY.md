@@ -1,6 +1,6 @@
 # Complete mission gallery
 
-**1,063 official records mapped to 866 native slots · 2,598 status graphics**
+**1,063 official records mapped to 870 native slots · 2,610 status graphics**
 
 [Use this pack on MissionChief](https://www.missionchief.co.uk/mission_graphics/539)
 
@@ -215,6 +215,8 @@
 | `857` Washing machine on fire · 1 catalogue variant | ![](assets/icons/red/0860--857--washing-machine-on-fire.png) | ![](assets/icons/yellow/0860--857--washing-machine-on-fire.png) | ![](assets/icons/green/0860--857--washing-machine-on-fire.png) | fire |
 | `858` Dryer on fire · 1 catalogue variant | ![](assets/icons/red/0861--858--dryer-on-fire.png) | ![](assets/icons/yellow/0861--858--dryer-on-fire.png) | ![](assets/icons/green/0861--858--dryer-on-fire.png) | fire |
 | `860` Dog loose on road · 1 catalogue variant | ![](assets/icons/red/0863--860--dog-loose-on-road.png) | ![](assets/icons/yellow/0863--860--dog-loose-on-road.png) | ![](assets/icons/green/0863--860--dog-loose-on-road.png) | animal |
+| `865` Fish sting on beach | ![](assets/icons/red/0868--865--fish-sting-on-beach.png) | ![](assets/icons/yellow/0868--865--fish-sting-on-beach.png) | ![](assets/icons/green/0868--865--fish-sting-on-beach.png) | medical |
+| `866` Burned by barbecue | ![](assets/icons/red/0869--866--burned-by-barbecue.png) | ![](assets/icons/yellow/0869--866--burned-by-barbecue.png) | ![](assets/icons/green/0869--866--burned-by-barbecue.png) | medical |
 ## Level 2
 
 | Mission slot | Red | Amber | Green | Type |
@@ -430,6 +432,8 @@
 | `859` Tampering with fire hydrants · 1 catalogue variant | ![](assets/icons/red/0862--859--tampering-with-fire-hydrants.png) | ![](assets/icons/yellow/0862--859--tampering-with-fire-hydrants.png) | ![](assets/icons/green/0862--859--tampering-with-fire-hydrants.png) | fire |
 | `861` Knifepoint Robbery of a Person · 1 catalogue variant | ![](assets/icons/red/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/yellow/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/green/0864--861--knifepoint-robbery-of-a-person.png) | crime |
 | `863` Fallen Down Stairs · 1 catalogue variant | ![](assets/icons/red/0866--863--fallen-down-stairs.png) | ![](assets/icons/yellow/0866--863--fallen-down-stairs.png) | ![](assets/icons/green/0866--863--fallen-down-stairs.png) | medical |
+| `864` Lost child at the beach | ![](assets/icons/red/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/yellow/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/green/0867--864--lost-child-at-the-beach.png) | marine |
+| `867` Jet ski near the coast | ![](assets/icons/red/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/yellow/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/green/0870--867--jet-ski-near-the-coast.png) | marine |
 ## Level 3
 
 | Mission slot | Red | Amber | Green | Type |

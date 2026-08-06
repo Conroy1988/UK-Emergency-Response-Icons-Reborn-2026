@@ -46,8 +46,9 @@ fixed, so urgency and live progress remain separate signals.
 ## Complete coverage
 
 - 1,063/1,063 current official UK catalogue records mapped.
-- 864/864 native mission slots plus Hand-off and Custom Alliance covered.
-- 2,598 transparent 32×37 PNGs.
+- 868/868 current native mission slots plus Hand-off and Custom Alliance covered.
+- 2,610 transparent 32×37 PNGs.
+- Four pre-provisioned MissionChief rows are marked provisional until their full catalogue metadata is published.
 - 19 deterministic incident-pictogram families.
 - All official variants retain their stable MissionChief IDs and map to their
   native base slot; the highest variant level is used so escalation is never understated.

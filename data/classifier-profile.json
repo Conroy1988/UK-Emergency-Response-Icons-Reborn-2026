@@ -8,8 +8,8 @@
     "5": "score >= 50"
   },
   "slot_level_distribution": {
-    "1": 207,
-    "2": 211,
+    "1": 209,
+    "2": 213,
     "3": 200,
     "4": 177,
     "5": 71
@@ -32,8 +32,8 @@
     "eod": 32,
     "fire": 273,
     "hazmat": 26,
-    "marine": 36,
-    "medical": 130,
+    "marine": 38,
+    "medical": 132,
     "mountain": 11,
     "police": 95,
     "rail": 41,
@@ -43,9 +43,9 @@
     "weather": 34
   },
   "service_distribution": {
-    "ambulance": 149,
+    "ambulance": 151,
     "fire": 404,
-    "marine": 40,
+    "marine": 42,
     "mixed": 54,
     "mountain": 8,
     "police": 211

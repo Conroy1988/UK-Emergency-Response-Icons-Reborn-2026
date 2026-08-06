@@ -35,16 +35,20 @@ def validate(root: Path) -> dict:
     ids=[r["mission_id"] for r in records]
     active_slots=[r for r in slots if r["source_kind"]=="official"]
     legacy_slots=[r for r in slots if r["source_kind"]=="legacy"]
-    official_slots=[r for r in slots if r["source_kind"] in {"official","legacy"}]
+    provisional_slots=[r for r in slots if r["source_kind"]=="provisional"]
+    official_slots=[r for r in slots if r["source_kind"] in {"official","legacy","provisional"}]
+    published_slots=[r for r in slots if r["source_kind"] in {"official","legacy"}]
     special_slots=[r for r in slots if r["source_kind"]=="special"]
     slot_ids=[r["slot_id"] for r in slots]
     check("catalogue_record_count",len(records)==manifest["catalogue_record_count"],str(len(records)))
     check("unique_mission_ids",len(ids)==len(set(ids)),str(len(set(ids))))
-    check("official_slot_count",len(official_slots)==manifest["official_slot_count"]==864,str(len(official_slots)))
+    check("official_slot_count",len(official_slots)==manifest["official_slot_count"],str(len(official_slots)))
+    check("published_official_slot_count",len(published_slots)==manifest["published_official_slot_count"],str(len(published_slots)))
     check("active_slot_count",len(active_slots)==manifest["active_slot_count"],str(len(active_slots)))
     check("legacy_slot_count",len(legacy_slots)==manifest["legacy_slot_count"]==37,str(len(legacy_slots)))
+    check("provisional_slot_count",len(provisional_slots)==manifest["provisional_slot_count"],str(len(provisional_slots)))
     check("special_slot_count",len(special_slots)==manifest["special_slot_count"]==2,str(len(special_slots)))
-    check("contiguous_official_slots",[r["slot_id"] for r in official_slots]==[str(i) for i in range(864)],"")
+    check("contiguous_official_slots",[r["slot_id"] for r in official_slots]==[str(i) for i in range(manifest["official_slot_count"])],"")
     check("unique_upload_slots",len(slot_ids)==len(set(slot_ids))==manifest["upload_slot_count"],str(len(slot_ids)))
     mapped_ids=[mission_id for slot in active_slots for mission_id in slot["mission_ids"]]
     check("every_record_mapped_once",sorted(mapped_ids)==sorted(ids),f"{len(mapped_ids)} mappings")
@@ -92,6 +96,7 @@ def validate(root: Path) -> dict:
     report={
         "schema_version":1,"all_passed":not errors,"catalogue_record_count":len(records),"official_slot_count":len(official_slots),
         "active_slot_count":len(active_slots),"legacy_slot_count":len(legacy_slots),
+        "provisional_slot_count":len(provisional_slots),"published_official_slot_count":len(published_slots),
         "special_slot_count":len(special_slots),"upload_slot_count":len(slots),"image_count":len(seen_paths),
         "level_distribution":dict(sorted(Counter(str(r["level"]) for r in slots).items())),
         "family_distribution":dict(sorted(Counter(r["family"] for r in slots).items())),
