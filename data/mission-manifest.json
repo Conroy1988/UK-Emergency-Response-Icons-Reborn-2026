@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "project": "UK Emergency Response Icons Reborn 2026",
-  "catalogue_record_count": 1063,
-  "official_slot_count": 868,
-  "active_slot_count": 827,
+  "catalogue_record_count": 1065,
+  "official_slot_count": 869,
+  "active_slot_count": 829,
   "legacy_slot_count": 37,
-  "provisional_slot_count": 4,
-  "published_official_slot_count": 864,
+  "provisional_slot_count": 3,
+  "published_official_slot_count": 866,
   "special_slot_count": 2,
-  "upload_slot_count": 870,
-  "catalogue_sha256": "c909cc961ea8f4028e0edb508c55b93d9505cc429fc4893617823317bce38315",
+  "upload_slot_count": 871,
+  "catalogue_sha256": "63bd40d4817ee4628d596805cf36384d584226ed3f3260bae4c9147058fb8a79",
   "canvas": {
     "width": 32,
     "height": 37
@@ -26560,6 +26560,55 @@
         "ambulance"
       ],
       "family": "medical"
+    },
+    {
+      "mission_id": "864",
+      "slot_id": "864",
+      "name": "Lost child at the beach",
+      "categories": [
+        "police"
+      ],
+      "level": 3,
+      "score": 12.18,
+      "components": {
+        "resources": 2.0,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 2.4,
+        "credits": 2.99,
+        "hazards": 0.0
+      },
+      "primary_service": "police",
+      "services": [
+        "ambulance",
+        "police"
+      ],
+      "family": "police"
+    },
+    {
+      "mission_id": "868",
+      "slot_id": "868",
+      "name": "Lost Child at Beach - Coastguard Search",
+      "categories": [
+        "water_rescue_2"
+      ],
+      "level": 3,
+      "score": 20.78,
+      "components": {
+        "resources": 6.65,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 4.8,
+        "credits": 3.45,
+        "hazards": 1.1
+      },
+      "primary_service": "marine",
+      "services": [
+        "ambulance",
+        "marine",
+        "police"
+      ],
+      "family": "marine"
     }
   ],
   "slots": [
@@ -57287,24 +57336,31 @@
       "order": 867,
       "slot_id": "864",
       "name": "Lost child at the beach",
-      "source_kind": "provisional",
-      "mission_ids": [],
-      "variant_count": 0,
-      "level": 2,
-      "score": 0.0,
-      "components": {},
-      "max_level_source_mission_id": null,
-      "primary_service": "marine",
+      "source_kind": "official",
+      "mission_ids": [
+        "864"
+      ],
+      "variant_count": 1,
+      "level": 3,
+      "score": 12.18,
+      "components": {
+        "resources": 2.0,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 2.4,
+        "credits": 2.99,
+        "hazards": 0.0
+      },
+      "max_level_source_mission_id": "864",
+      "primary_service": "police",
       "services": [
-        "marine",
+        "ambulance",
         "police"
       ],
-      "family": "marine",
+      "family": "police",
       "categories": [
-        "coastal",
         "police"
       ],
-      "provisional_rationale": "Pre-provisioned native slot; conservative coastal-search classification pending official requirements.",
       "files": {
         "red": "assets/icons/red/0867--864--lost-child-at-the-beach.png",
         "yellow": "assets/icons/yellow/0867--864--lost-child-at-the-beach.png",
@@ -57388,6 +57444,42 @@
         "red": "assets/icons/red/0870--867--jet-ski-near-the-coast.png",
         "yellow": "assets/icons/yellow/0870--867--jet-ski-near-the-coast.png",
         "green": "assets/icons/green/0870--867--jet-ski-near-the-coast.png"
+      }
+    },
+    {
+      "order": 871,
+      "slot_id": "868",
+      "name": "Lost Child at Beach - Coastguard Search",
+      "source_kind": "official",
+      "mission_ids": [
+        "868"
+      ],
+      "variant_count": 1,
+      "level": 3,
+      "score": 20.78,
+      "components": {
+        "resources": 6.65,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 4.8,
+        "credits": 3.45,
+        "hazards": 1.1
+      },
+      "max_level_source_mission_id": "868",
+      "primary_service": "marine",
+      "services": [
+        "ambulance",
+        "marine",
+        "police"
+      ],
+      "family": "marine",
+      "categories": [
+        "water_rescue_2"
+      ],
+      "files": {
+        "red": "assets/icons/red/0871--868--lost-child-at-beach-coastguard-search.png",
+        "yellow": "assets/icons/yellow/0871--868--lost-child-at-beach-coastguard-search.png",
+        "green": "assets/icons/green/0871--868--lost-child-at-beach-coastguard-search.png"
       }
     }
   ]
