@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/"dist"
-VERSION=(os.environ.get("PACK_VERSION") or os.environ.get("GITHUB_REF_NAME") or "v1.0.1").removeprefix("v")
+VERSION=(os.environ.get("PACK_VERSION") or os.environ.get("GITHUB_REF_NAME") or "v1.0.2").removeprefix("v")
 NAME=f"UK-Emergency-Response-Icons-Reborn-2026-v{VERSION}.zip"
 
 
