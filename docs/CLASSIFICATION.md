@@ -31,3 +31,19 @@ MissionChief exposes one graphics slot per base mission, while its catalogue
 contains additive variants. Every official record is classified independently;
 the native slot displays the highest level among its current variants. This
 prevents an escalated variant from appearing less serious than its base call.
+
+## Operational V2 signature classification
+
+Response level and visual identity remain separate deterministic decisions.
+After the level is calculated, Operational V2 derives three visual layers from
+the canonical mission title and classified service data:
+
+- incident family for the dominant silhouette;
+- semantic modifier for the action, hazard or clinical condition;
+- contextual subject for the person, vehicle, premises, environment or
+  infrastructure involved.
+
+Required services populate the segmented service rail independently of those
+three layers. The complete values are stored for every record and upload slot in
+`data/mission-manifest.json`, making visual changes auditable alongside level
+changes.

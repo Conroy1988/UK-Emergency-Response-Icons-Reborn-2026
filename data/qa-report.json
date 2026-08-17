@@ -1,5 +1,6 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "style_version": "2.0",
   "all_passed": true,
   "catalogue_record_count": 1066,
   "official_slot_count": 869,
@@ -19,24 +20,24 @@
   },
   "family_distribution": {
     "aircraft": 15,
-    "animal": 19,
-    "cardiac": 11,
+    "animal": 14,
+    "cardiac": 7,
     "collapse": 10,
-    "collision": 23,
-    "crime": 32,
-    "crowd": 36,
-    "eod": 32,
-    "fire": 273,
+    "collision": 32,
+    "crime": 37,
+    "crowd": 43,
+    "eod": 34,
+    "fire": 272,
     "hazmat": 26,
-    "marine": 38,
+    "marine": 29,
     "medical": 132,
     "mountain": 11,
-    "police": 96,
-    "rail": 41,
-    "rescue": 26,
-    "response": 14,
-    "utilities": 2,
-    "weather": 34
+    "police": 99,
+    "rail": 39,
+    "rescue": 31,
+    "response": 2,
+    "utilities": 8,
+    "weather": 30
   },
   "checks": [
     {
@@ -102,7 +103,32 @@
     {
       "name": "all_states_declared",
       "passed": true,
-      "detail": "{'red': '#ff4d5a', 'yellow': '#ffc857', 'green': '#3bd672'}"
+      "detail": "{'red': '#ff4357', 'yellow': '#ffc145', 'green': '#32d583'}"
+    },
+    {
+      "name": "operational_v2_style",
+      "passed": true,
+      "detail": "2.0"
+    },
+    {
+      "name": "mission_signature_coverage",
+      "passed": true,
+      "detail": "871 signatures"
+    },
+    {
+      "name": "semantic_signature_depth",
+      "passed": true,
+      "detail": "265 distinct semantic compositions"
+    },
+    {
+      "name": "semantic_token_boundaries",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "eod_signature_routing",
+      "passed": true,
+      "detail": ""
     },
     {
       "name": "three_files_per_slot",
@@ -127,7 +153,12 @@
     {
       "name": "unique_render_hashes",
       "passed": true,
-      "detail": "435 distinct renders"
+      "detail": "1365 distinct renders"
+    },
+    {
+      "name": "mission_aware_red_renders",
+      "passed": true,
+      "detail": "455 distinct red-state renders"
     }
   ],
   "errors": []

@@ -33,7 +33,9 @@ def main() -> None:
             draw.rounded_rectangle((x+4,y+4,x+card_w-4,y+card_h-4),radius=10,fill=bg,outline="#ffffff55",width=1)
             icon=Image.open(ROOT/r["files"][state]).convert("RGBA").resize((48,56),Image.Resampling.NEAREST)
             sheet.paste(icon,(x+10,y+10),icon)
-            draw.text((x+66,y+12),f"L{r['level']} · {r['family'].upper()}",font=font(12),fill="white",stroke_width=2,stroke_fill="#111827")
+            descriptor=(r["family"] if r["modifier"]==r["family"] else f"{r['family']} · {r['modifier']}").upper()
+            descriptor=descriptor[:16]+("…" if len(descriptor)>16 else "")
+            draw.text((x+66,y+12),f"L{r['level']} · {descriptor}",font=font(10),fill="white",stroke_width=2,stroke_fill="#111827")
             name=r["name"][:25]+("…" if len(r["name"])>25 else "")
             draw.text((x+66,y+34),name,font=font(10),fill="white",stroke_width=2,stroke_fill="#111827")
             draw.text((x+66,y+52),f"SLOT {r['slot_id']}",font=font(9),fill="#dbeafe",stroke_width=2,stroke_fill="#111827")
@@ -41,10 +43,10 @@ def main() -> None:
 
     lines=["# Complete mission gallery","",f"**{manifest['catalogue_record_count']:,} official records mapped to {manifest['upload_slot_count']:,} native slots · {len(records)*3:,} status graphics**","","[Use this pack on MissionChief](https://www.missionchief.co.uk/mission_graphics/539)",""]
     for level in range(1,6):
-        lines.extend([f"## Level {level}","","| Mission slot | Red | Amber | Green | Type |","|---|---:|---:|---:|---|"])
+        lines.extend([f"## Level {level}","","| Mission slot | Red | Amber | Green | Signature |","|---|---:|---:|---:|---|"])
         for r in (slot for slot in records if slot["level"]==level):
             variants=f" · {r['variant_count']} catalogue variant{'s' if r['variant_count'] != 1 else ''}" if r["source_kind"]=="official" else ""
-            lines.append(f"| `{r['slot_id']}` {r['name']}{variants} | ![]({r['files']['red']}) | ![]({r['files']['yellow']}) | ![]({r['files']['green']}) | {r['family']} |")
+            lines.append(f"| `{r['slot_id']}` {r['name']}{variants} | ![]({r['files']['red']}) | ![]({r['files']['yellow']}) | ![]({r['files']['green']}) | {r['family']} · {r['modifier']} · {r['subject']} |")
     (ROOT/"GALLERY.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
 
 
