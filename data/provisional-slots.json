@@ -3,26 +3,6 @@
   "status": "MissionChief-native rows visible before catalogue metadata publication",
   "slots": [
     {
-      "slot_id": "864",
-      "name": "Lost child at the beach",
-      "level": 2,
-      "primary_service": "marine",
-      "services": ["marine", "police"],
-      "family": "marine",
-      "categories": ["coastal", "police"],
-      "rationale": "Pre-provisioned native slot; conservative coastal-search classification pending official requirements."
-    },
-    {
-      "slot_id": "865",
-      "name": "Fish sting on beach",
-      "level": 1,
-      "primary_service": "ambulance",
-      "services": ["ambulance"],
-      "family": "medical",
-      "categories": ["ambulance", "coastal"],
-      "rationale": "Pre-provisioned native slot; routine medical classification pending official requirements."
-    },
-    {
       "slot_id": "866",
       "name": "Burned by barbecue",
       "level": 1,

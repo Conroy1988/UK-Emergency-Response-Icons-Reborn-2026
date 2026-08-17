@@ -1,7 +1,7 @@
 # UK Emergency Response Icons Reborn 2026
 
-[![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C063-6d5dfc)](data/mission-manifest.json)
-[![Graphics](https://img.shields.io/badge/status_graphics-2%2C610-22c55e)](GALLERY.md)
+[![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C066-6d5dfc)](data/mission-manifest.json)
+[![Graphics](https://img.shields.io/badge/status_graphics-2%2C613-22c55e)](GALLERY.md)
 [![QA](https://img.shields.io/badge/automated_QA-passing-22c55e)](data/qa-report.json)
 [![Licence](https://img.shields.io/badge/artwork-CC_BY--NC--SA_4.0-f59e0b)](LICENSE.md)
 
@@ -45,10 +45,10 @@ fixed, so urgency and live progress remain separate signals.
 
 ## Complete coverage
 
-- 1,063/1,063 current official UK catalogue records mapped.
-- 868/868 current native mission slots plus Hand-off and Custom Alliance covered.
-- 2,610 transparent 32×37 PNGs.
-- Four pre-provisioned MissionChief rows are marked provisional until their full catalogue metadata is published.
+- 1,066/1,066 current official UK catalogue records mapped.
+- 869/869 current native mission slots plus Hand-off and Custom Alliance covered.
+- 2,613 transparent 32×37 PNGs.
+- Two pre-provisioned MissionChief rows are marked provisional until their full catalogue metadata is published.
 - 19 deterministic incident-pictogram families.
 - All official variants retain their stable MissionChief IDs and map to their
   native base slot; the highest variant level is used so escalation is never understated.

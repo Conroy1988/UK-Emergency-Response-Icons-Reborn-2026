@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "all_passed": true,
-  "catalogue_record_count": 1063,
-  "official_slot_count": 868,
-  "active_slot_count": 827,
+  "catalogue_record_count": 1066,
+  "official_slot_count": 869,
+  "active_slot_count": 830,
   "legacy_slot_count": 37,
-  "provisional_slot_count": 4,
-  "published_official_slot_count": 864,
+  "provisional_slot_count": 2,
+  "published_official_slot_count": 867,
   "special_slot_count": 2,
-  "upload_slot_count": 870,
-  "image_count": 2610,
+  "upload_slot_count": 871,
+  "image_count": 2613,
   "level_distribution": {
     "1": 209,
-    "2": 213,
-    "3": 200,
+    "2": 212,
+    "3": 202,
     "4": 177,
     "5": 71
   },
@@ -31,7 +31,7 @@
     "marine": 38,
     "medical": 132,
     "mountain": 11,
-    "police": 95,
+    "police": 96,
     "rail": 41,
     "rescue": 26,
     "response": 14,
@@ -42,27 +42,27 @@
     {
       "name": "catalogue_record_count",
       "passed": true,
-      "detail": "1063"
+      "detail": "1066"
     },
     {
       "name": "unique_mission_ids",
       "passed": true,
-      "detail": "1063"
+      "detail": "1066"
     },
     {
       "name": "official_slot_count",
       "passed": true,
-      "detail": "868"
+      "detail": "869"
     },
     {
       "name": "published_official_slot_count",
       "passed": true,
-      "detail": "864"
+      "detail": "867"
     },
     {
       "name": "active_slot_count",
       "passed": true,
-      "detail": "827"
+      "detail": "830"
     },
     {
       "name": "legacy_slot_count",
@@ -72,7 +72,7 @@
     {
       "name": "provisional_slot_count",
       "passed": true,
-      "detail": "4"
+      "detail": "2"
     },
     {
       "name": "special_slot_count",
@@ -87,17 +87,17 @@
     {
       "name": "unique_upload_slots",
       "passed": true,
-      "detail": "870"
+      "detail": "871"
     },
     {
       "name": "every_record_mapped_once",
       "passed": true,
-      "detail": "1063 mappings"
+      "detail": "1066 mappings"
     },
     {
       "name": "all_levels_present",
       "passed": true,
-      "detail": "Counter({2: 213, 1: 209, 3: 200, 4: 177, 5: 71})"
+      "detail": "Counter({2: 212, 1: 209, 3: 202, 4: 177, 5: 71})"
     },
     {
       "name": "all_states_declared",
@@ -107,7 +107,7 @@
     {
       "name": "three_files_per_slot",
       "passed": true,
-      "detail": "2610 files"
+      "detail": "2613 files"
     },
     {
       "name": "png_integrity",

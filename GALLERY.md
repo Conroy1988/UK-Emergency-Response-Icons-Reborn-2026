@@ -1,6 +1,6 @@
 # Complete mission gallery
 
-**1,063 official records mapped to 870 native slots · 2,610 status graphics**
+**1,066 official records mapped to 871 native slots · 2,613 status graphics**
 
 [Use this pack on MissionChief](https://www.missionchief.co.uk/mission_graphics/539)
 
@@ -215,7 +215,7 @@
 | `857` Washing machine on fire · 1 catalogue variant | ![](assets/icons/red/0860--857--washing-machine-on-fire.png) | ![](assets/icons/yellow/0860--857--washing-machine-on-fire.png) | ![](assets/icons/green/0860--857--washing-machine-on-fire.png) | fire |
 | `858` Dryer on fire · 1 catalogue variant | ![](assets/icons/red/0861--858--dryer-on-fire.png) | ![](assets/icons/yellow/0861--858--dryer-on-fire.png) | ![](assets/icons/green/0861--858--dryer-on-fire.png) | fire |
 | `860` Dog loose on road · 1 catalogue variant | ![](assets/icons/red/0863--860--dog-loose-on-road.png) | ![](assets/icons/yellow/0863--860--dog-loose-on-road.png) | ![](assets/icons/green/0863--860--dog-loose-on-road.png) | animal |
-| `865` Fish sting on beach | ![](assets/icons/red/0868--865--fish-sting-on-beach.png) | ![](assets/icons/yellow/0868--865--fish-sting-on-beach.png) | ![](assets/icons/green/0868--865--fish-sting-on-beach.png) | medical |
+| `865` Worsening Dementia · 1 catalogue variant | ![](assets/icons/red/0868--865--worsening-dementia.png) | ![](assets/icons/yellow/0868--865--worsening-dementia.png) | ![](assets/icons/green/0868--865--worsening-dementia.png) | medical |
 | `866` Burned by barbecue | ![](assets/icons/red/0869--866--burned-by-barbecue.png) | ![](assets/icons/yellow/0869--866--burned-by-barbecue.png) | ![](assets/icons/green/0869--866--burned-by-barbecue.png) | medical |
 ## Level 2
 
@@ -432,7 +432,6 @@
 | `859` Tampering with fire hydrants · 1 catalogue variant | ![](assets/icons/red/0862--859--tampering-with-fire-hydrants.png) | ![](assets/icons/yellow/0862--859--tampering-with-fire-hydrants.png) | ![](assets/icons/green/0862--859--tampering-with-fire-hydrants.png) | fire |
 | `861` Knifepoint Robbery of a Person · 1 catalogue variant | ![](assets/icons/red/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/yellow/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/green/0864--861--knifepoint-robbery-of-a-person.png) | crime |
 | `863` Fallen Down Stairs · 1 catalogue variant | ![](assets/icons/red/0866--863--fallen-down-stairs.png) | ![](assets/icons/yellow/0866--863--fallen-down-stairs.png) | ![](assets/icons/green/0866--863--fallen-down-stairs.png) | medical |
-| `864` Lost child at the beach | ![](assets/icons/red/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/yellow/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/green/0867--864--lost-child-at-the-beach.png) | marine |
 | `867` Jet ski near the coast | ![](assets/icons/red/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/yellow/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/green/0870--867--jet-ski-near-the-coast.png) | marine |
 ## Level 3
 
@@ -638,6 +637,8 @@
 | `845` Fans fight at volleyball match · 1 catalogue variant | ![](assets/icons/red/0848--845--fans-fight-at-volleyball-match.png) | ![](assets/icons/yellow/0848--845--fans-fight-at-volleyball-match.png) | ![](assets/icons/green/0848--845--fans-fight-at-volleyball-match.png) | crowd |
 | `846` Fans fight at basketball game · 1 catalogue variant | ![](assets/icons/red/0849--846--fans-fight-at-basketball-game.png) | ![](assets/icons/yellow/0849--846--fans-fight-at-basketball-game.png) | ![](assets/icons/green/0849--846--fans-fight-at-basketball-game.png) | crowd |
 | `847` Truck overturned by strong winds · 2 catalogue variants | ![](assets/icons/red/0850--847--truck-overturned-by-strong-winds.png) | ![](assets/icons/yellow/0850--847--truck-overturned-by-strong-winds.png) | ![](assets/icons/green/0850--847--truck-overturned-by-strong-winds.png) | weather |
+| `864` Lost child at the beach · 1 catalogue variant | ![](assets/icons/red/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/yellow/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/green/0867--864--lost-child-at-the-beach.png) | police |
+| `868` Lost Child at Beach - Coastguard Search · 1 catalogue variant | ![](assets/icons/red/0871--868--lost-child-at-beach-coastguard-search.png) | ![](assets/icons/yellow/0871--868--lost-child-at-beach-coastguard-search.png) | ![](assets/icons/green/0871--868--lost-child-at-beach-coastguard-search.png) | marine |
 ## Level 4
 
 | Mission slot | Red | Amber | Green | Type |

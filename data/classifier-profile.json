@@ -9,15 +9,15 @@
   },
   "slot_level_distribution": {
     "1": 209,
-    "2": 213,
-    "3": 200,
+    "2": 212,
+    "3": 202,
     "4": 177,
     "5": 71
   },
   "record_level_distribution": {
-    "1": 206,
+    "1": 207,
     "2": 216,
-    "3": 211,
+    "3": 213,
     "4": 248,
     "5": 182
   },
@@ -35,7 +35,7 @@
     "marine": 38,
     "medical": 132,
     "mountain": 11,
-    "police": 95,
+    "police": 96,
     "rail": 41,
     "rescue": 26,
     "response": 14,
@@ -48,6 +48,6 @@
     "marine": 42,
     "mixed": 54,
     "mountain": 8,
-    "police": 211
+    "police": 212
   }
 }

@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "project": "UK Emergency Response Icons Reborn 2026",
-  "catalogue_record_count": 1063,
-  "official_slot_count": 868,
-  "active_slot_count": 827,
+  "catalogue_record_count": 1066,
+  "official_slot_count": 869,
+  "active_slot_count": 830,
   "legacy_slot_count": 37,
-  "provisional_slot_count": 4,
-  "published_official_slot_count": 864,
+  "provisional_slot_count": 2,
+  "published_official_slot_count": 867,
   "special_slot_count": 2,
-  "upload_slot_count": 870,
-  "catalogue_sha256": "c909cc961ea8f4028e0edb508c55b93d9505cc429fc4893617823317bce38315",
+  "upload_slot_count": 871,
+  "catalogue_sha256": "5d641a0ffdb6f0c899ade769bff01f73a6bc4f6dab7f5c0bf567d832a75f1e63",
   "canvas": {
     "width": 32,
     "height": 37
@@ -26560,6 +26560,78 @@
         "ambulance"
       ],
       "family": "medical"
+    },
+    {
+      "mission_id": "864",
+      "slot_id": "864",
+      "name": "Lost child at the beach",
+      "categories": [
+        "police"
+      ],
+      "level": 3,
+      "score": 12.18,
+      "components": {
+        "resources": 2.0,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 2.4,
+        "credits": 2.99,
+        "hazards": 0.0
+      },
+      "primary_service": "police",
+      "services": [
+        "ambulance",
+        "police"
+      ],
+      "family": "police"
+    },
+    {
+      "mission_id": "865",
+      "slot_id": "865",
+      "name": "Worsening Dementia",
+      "categories": [
+        "ambulance"
+      ],
+      "level": 1,
+      "score": 3.45,
+      "components": {
+        "resources": 1.0,
+        "patients": 0.43,
+        "clinical_acuity": 0.5,
+        "services": 0.0,
+        "credits": 1.52,
+        "hazards": 0.0
+      },
+      "primary_service": "ambulance",
+      "services": [
+        "ambulance"
+      ],
+      "family": "medical"
+    },
+    {
+      "mission_id": "868",
+      "slot_id": "868",
+      "name": "Lost Child at Beach - Coastguard Search",
+      "categories": [
+        "water_rescue_2"
+      ],
+      "level": 3,
+      "score": 19.44,
+      "components": {
+        "resources": 5.75,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 4.8,
+        "credits": 3.45,
+        "hazards": 0.66
+      },
+      "primary_service": "marine",
+      "services": [
+        "ambulance",
+        "marine",
+        "police"
+      ],
+      "family": "marine"
     }
   ],
   "slots": [
@@ -57287,24 +57359,31 @@
       "order": 867,
       "slot_id": "864",
       "name": "Lost child at the beach",
-      "source_kind": "provisional",
-      "mission_ids": [],
-      "variant_count": 0,
-      "level": 2,
-      "score": 0.0,
-      "components": {},
-      "max_level_source_mission_id": null,
-      "primary_service": "marine",
+      "source_kind": "official",
+      "mission_ids": [
+        "864"
+      ],
+      "variant_count": 1,
+      "level": 3,
+      "score": 12.18,
+      "components": {
+        "resources": 2.0,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 2.4,
+        "credits": 2.99,
+        "hazards": 0.0
+      },
+      "max_level_source_mission_id": "864",
+      "primary_service": "police",
       "services": [
-        "marine",
+        "ambulance",
         "police"
       ],
-      "family": "marine",
+      "family": "police",
       "categories": [
-        "coastal",
         "police"
       ],
-      "provisional_rationale": "Pre-provisioned native slot; conservative coastal-search classification pending official requirements.",
       "files": {
         "red": "assets/icons/red/0867--864--lost-child-at-the-beach.png",
         "yellow": "assets/icons/yellow/0867--864--lost-child-at-the-beach.png",
@@ -57314,28 +57393,35 @@
     {
       "order": 868,
       "slot_id": "865",
-      "name": "Fish sting on beach",
-      "source_kind": "provisional",
-      "mission_ids": [],
-      "variant_count": 0,
+      "name": "Worsening Dementia",
+      "source_kind": "official",
+      "mission_ids": [
+        "865"
+      ],
+      "variant_count": 1,
       "level": 1,
-      "score": 0.0,
-      "components": {},
-      "max_level_source_mission_id": null,
+      "score": 3.45,
+      "components": {
+        "resources": 1.0,
+        "patients": 0.43,
+        "clinical_acuity": 0.5,
+        "services": 0.0,
+        "credits": 1.52,
+        "hazards": 0.0
+      },
+      "max_level_source_mission_id": "865",
       "primary_service": "ambulance",
       "services": [
         "ambulance"
       ],
       "family": "medical",
       "categories": [
-        "ambulance",
-        "coastal"
+        "ambulance"
       ],
-      "provisional_rationale": "Pre-provisioned native slot; routine medical classification pending official requirements.",
       "files": {
-        "red": "assets/icons/red/0868--865--fish-sting-on-beach.png",
-        "yellow": "assets/icons/yellow/0868--865--fish-sting-on-beach.png",
-        "green": "assets/icons/green/0868--865--fish-sting-on-beach.png"
+        "red": "assets/icons/red/0868--865--worsening-dementia.png",
+        "yellow": "assets/icons/yellow/0868--865--worsening-dementia.png",
+        "green": "assets/icons/green/0868--865--worsening-dementia.png"
       }
     },
     {
@@ -57388,6 +57474,42 @@
         "red": "assets/icons/red/0870--867--jet-ski-near-the-coast.png",
         "yellow": "assets/icons/yellow/0870--867--jet-ski-near-the-coast.png",
         "green": "assets/icons/green/0870--867--jet-ski-near-the-coast.png"
+      }
+    },
+    {
+      "order": 871,
+      "slot_id": "868",
+      "name": "Lost Child at Beach - Coastguard Search",
+      "source_kind": "official",
+      "mission_ids": [
+        "868"
+      ],
+      "variant_count": 1,
+      "level": 3,
+      "score": 19.44,
+      "components": {
+        "resources": 5.75,
+        "patients": 0.28,
+        "clinical_acuity": 4.5,
+        "services": 4.8,
+        "credits": 3.45,
+        "hazards": 0.66
+      },
+      "max_level_source_mission_id": "868",
+      "primary_service": "marine",
+      "services": [
+        "ambulance",
+        "marine",
+        "police"
+      ],
+      "family": "marine",
+      "categories": [
+        "water_rescue_2"
+      ],
+      "files": {
+        "red": "assets/icons/red/0871--868--lost-child-at-beach-coastguard-search.png",
+        "yellow": "assets/icons/yellow/0871--868--lost-child-at-beach-coastguard-search.png",
+        "green": "assets/icons/green/0871--868--lost-child-at-beach-coastguard-search.png"
       }
     }
   ]
