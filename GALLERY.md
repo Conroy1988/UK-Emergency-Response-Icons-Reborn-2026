@@ -216,7 +216,6 @@
 | `858` Dryer on fire · 1 catalogue variant | ![](assets/icons/red/0861--858--dryer-on-fire.png) | ![](assets/icons/yellow/0861--858--dryer-on-fire.png) | ![](assets/icons/green/0861--858--dryer-on-fire.png) | fire · fire · industrial |
 | `860` Dog loose on road · 1 catalogue variant | ![](assets/icons/red/0863--860--dog-loose-on-road.png) | ![](assets/icons/yellow/0863--860--dog-loose-on-road.png) | ![](assets/icons/green/0863--860--dog-loose-on-road.png) | animal · animal · animal |
 | `865` Worsening Dementia · 1 catalogue variant | ![](assets/icons/red/0868--865--worsening-dementia.png) | ![](assets/icons/yellow/0868--865--worsening-dementia.png) | ![](assets/icons/green/0868--865--worsening-dementia.png) | medical · brain · response |
-| `866` Burned by barbecue | ![](assets/icons/red/0869--866--burned-by-barbecue.png) | ![](assets/icons/yellow/0869--866--burned-by-barbecue.png) | ![](assets/icons/green/0869--866--burned-by-barbecue.png) | medical · burn · food |
 ## Level 2
 
 | Mission slot | Red | Amber | Green | Signature |
@@ -432,6 +431,7 @@
 | `859` Tampering with fire hydrants · 1 catalogue variant | ![](assets/icons/red/0862--859--tampering-with-fire-hydrants.png) | ![](assets/icons/yellow/0862--859--tampering-with-fire-hydrants.png) | ![](assets/icons/green/0862--859--tampering-with-fire-hydrants.png) | fire · fire · infrastructure |
 | `861` Knifepoint Robbery of a Person · 1 catalogue variant | ![](assets/icons/red/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/yellow/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/green/0864--861--knifepoint-robbery-of-a-person.png) | crime · weapon · person |
 | `863` Fallen Down Stairs · 1 catalogue variant | ![](assets/icons/red/0866--863--fallen-down-stairs.png) | ![](assets/icons/yellow/0866--863--fallen-down-stairs.png) | ![](assets/icons/green/0866--863--fallen-down-stairs.png) | medical · fall · response |
+| `866` Ineffective Breathing | ![](assets/icons/red/0869--866--ineffective-breathing.png) | ![](assets/icons/yellow/0869--866--ineffective-breathing.png) | ![](assets/icons/green/0869--866--ineffective-breathing.png) | medical · lungs · response |
 | `867` Jet ski near the coast | ![](assets/icons/red/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/yellow/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/green/0870--867--jet-ski-near-the-coast.png) | marine · marine · vessel |
 ## Level 3
 
