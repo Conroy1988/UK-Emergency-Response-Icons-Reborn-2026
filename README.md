@@ -1,5 +1,6 @@
 # UK Emergency Response Icons Reborn 2026
 
+[![Latest release](https://img.shields.io/badge/latest_release-v2.0.1-22c55e)](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1)
 [![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C066-6d5dfc)](data/mission-manifest.json)
 [![Graphics](https://img.shields.io/badge/status_graphics-2%2C613-22c55e)](GALLERY.md)
 [![Icon system](https://img.shields.io/badge/icon_system-Operational_V2-22c7d9)](docs/STYLE_GUIDE.md)
@@ -12,11 +13,42 @@ permanent **TKB Response Level 1–5**, and accessible red/amber/green map-state
 graphics for every current native slot.
 
 [Use the pack on MissionChief](https://www.missionchief.co.uk/mission_graphics/539) ·
+[Download v2.0.1](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1) ·
 [Browse every native mission slot](GALLERY.md) ·
 [MissionChief UK guide](https://tkb-gaming.scot/games/missionchief/guides/) ·
 [TKB MissionChief scripts](https://tkb-gaming.scot/mission-chief-scripts/)
 
 ![Red-state overview](assets/previews/overview-red.png)
+
+## Current status
+
+| Area | Status | What that means |
+|---|---|---|
+| Live MissionChief pack | **Synced** | 871 mission rows and all 2,613 red/amber/green images are live. A row-by-row comparison against v2.0.1 found zero name or filename mismatches. |
+| Latest release | **v2.0.1** | The current archive includes the corrected **Ineffective Breathing** marker for native slot `866`. |
+| Automated QA | **Passing** | Catalogue coverage, mappings, PNG integrity, state separation, semantic signatures, colours and half-scale visibility all pass. |
+| Upload queue | **Clear** | No MissionChief image uploads are pending. Future work starts only when MissionChief adds or changes a mission. |
+
+Normal MissionChief players do **not** need to download the ZIP or upload files
+one by one. Open the [live graphics pack](https://www.missionchief.co.uk/mission_graphics/539)
+and use MissionChief's graphics-pack action. The release archive is provided for
+offline inspection, preservation and maintainers.
+
+## How to read a marker
+
+Every marker carries four separate signals. They should not be interpreted as
+four versions of the same severity scale.
+
+| Signal | Where it appears | Meaning |
+|---|---|---|
+| Incident signature | Main pictogram | What kind of incident it is, including its main action/hazard and subject |
+| TKB Response Level | Numbered shield `1`–`5` | The estimated gameplay response burden; this number stays fixed |
+| Service rail | Coloured side segments | Which emergency-service mix the mission requires |
+| Map state | Outer colour and shape | Whether the mission needs action, has a response moving, or has its required resources covered |
+
+For example, a **red Level 1** marker is a small mission that still needs action.
+A **green Level 5** marker is a critical-scale mission whose required resources
+are currently covered. Level and live state deliberately remain independent.
 
 ## Operational V2
 
@@ -53,12 +85,16 @@ emergency-service grade. The complete, auditable scoring breakdown is in
 
 ## Map state
 
-- **Red alert** — new mission or action still required.
-- **Amber movement** — response under way.
-- **Green tick** — required resources covered/on scene.
+| State | Shape | Meaning |
+|---|---|---|
+| **Red — attention required** | Circular alert mark | The mission is new or still requires player action/resources. Red does **not** mean “Level 5”. |
+| **Amber — response moving** | Diamond movement chevrons | A response is under way, normally with units assigned or travelling, but the required coverage is not yet complete. |
+| **Green — resources covered** | Circular tick | MissionChief considers the required resources covered/on scene. Green does not necessarily mean the mission has finished, paid out or disappeared. |
 
-MissionChief switches these three images automatically. The 1–5 badge stays
-fixed, so urgency and live progress remain separate signals.
+MissionChief switches these images automatically. The response-level badge stays
+fixed, so **mission scale** and **live progress** remain separate signals. See
+[Status and signal guide](docs/STATUS_GUIDE.md) for examples and every repository
+status term.
 
 ![Amber-state overview](assets/previews/overview-yellow.png)
 
@@ -74,6 +110,23 @@ fixed, so urgency and live progress remain separate signals.
   native base slot; the highest variant level is used so escalation is never understated.
 - Light, dark, satellite and greyscale contrast tested at 100% and 50% scale.
 - New mission IDs are checked automatically and proposed through a validated PR.
+
+The two provisional rows are real MissionChief-native slots visible before the
+full official catalogue requirements are published. They use conservative
+classifications and are automatically replaced when authoritative metadata
+arrives. See [`data/provisional-slots.json`](data/provisional-slots.json).
+
+## Download and verify v2.0.1
+
+- [Release page and notes](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1)
+- [Download the verified ZIP](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/download/v2.0.1/UK-Emergency-Response-Icons-Reborn-2026-v2.0.1.zip)
+- [Download the SHA-256 file](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/download/v2.0.1/UK-Emergency-Response-Icons-Reborn-2026-v2.0.1.zip.sha256)
+
+Expected ZIP SHA-256:
+
+```text
+682f099d30e2be0465b888d53b483e3e1ecf322ccd6fb1c13e1ee2c78d8eb758
+```
 
 ## Rebuild locally
 
