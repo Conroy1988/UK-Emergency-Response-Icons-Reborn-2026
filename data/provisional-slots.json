@@ -4,13 +4,13 @@
   "slots": [
     {
       "slot_id": "866",
-      "name": "Burned by barbecue",
-      "level": 1,
+      "name": "Ineffective Breathing",
+      "level": 2,
       "primary_service": "ambulance",
       "services": ["ambulance"],
       "family": "medical",
       "categories": ["ambulance"],
-      "rationale": "Pre-provisioned native slot; routine burn-treatment classification pending official requirements."
+      "rationale": "MissionChief live-row name verified; conservative breathing-emergency classification pending official requirements."
     },
     {
       "slot_id": "867",

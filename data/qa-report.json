@@ -12,8 +12,8 @@
   "upload_slot_count": 871,
   "image_count": 2613,
   "level_distribution": {
-    "1": 209,
-    "2": 212,
+    "1": 208,
+    "2": 213,
     "3": 202,
     "4": 177,
     "5": 71
@@ -98,7 +98,7 @@
     {
       "name": "all_levels_present",
       "passed": true,
-      "detail": "Counter({2: 212, 1: 209, 3: 202, 4: 177, 5: 71})"
+      "detail": "Counter({2: 213, 1: 208, 3: 202, 4: 177, 5: 71})"
     },
     {
       "name": "all_states_declared",
@@ -153,12 +153,12 @@
     {
       "name": "unique_render_hashes",
       "passed": true,
-      "detail": "1365 distinct renders"
+      "detail": "1362 distinct renders"
     },
     {
       "name": "mission_aware_red_renders",
       "passed": true,
-      "detail": "455 distinct red-state renders"
+      "detail": "454 distinct red-state renders"
     }
   ],
   "errors": []

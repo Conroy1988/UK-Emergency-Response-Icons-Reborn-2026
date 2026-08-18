@@ -63236,11 +63236,11 @@
     {
       "order": 869,
       "slot_id": "866",
-      "name": "Burned by barbecue",
+      "name": "Ineffective Breathing",
       "source_kind": "provisional",
       "mission_ids": [],
       "variant_count": 0,
-      "level": 1,
+      "level": 2,
       "score": 0.0,
       "components": {},
       "max_level_source_mission_id": null,
@@ -63249,17 +63249,17 @@
         "ambulance"
       ],
       "family": "medical",
-      "modifier": "burn",
-      "subject": "food",
-      "signature": "medical:burn:food",
+      "modifier": "lungs",
+      "subject": "response",
+      "signature": "medical:lungs:response",
       "categories": [
         "ambulance"
       ],
-      "provisional_rationale": "Pre-provisioned native slot; routine burn-treatment classification pending official requirements.",
+      "provisional_rationale": "MissionChief live-row name verified; conservative breathing-emergency classification pending official requirements.",
       "files": {
-        "red": "assets/icons/red/0869--866--burned-by-barbecue.png",
-        "yellow": "assets/icons/yellow/0869--866--burned-by-barbecue.png",
-        "green": "assets/icons/green/0869--866--burned-by-barbecue.png"
+        "red": "assets/icons/red/0869--866--ineffective-breathing.png",
+        "yellow": "assets/icons/yellow/0869--866--ineffective-breathing.png",
+        "green": "assets/icons/green/0869--866--ineffective-breathing.png"
       }
     },
     {

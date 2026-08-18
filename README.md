@@ -69,7 +69,7 @@ fixed, so urgency and live progress remain separate signals.
 - 2,613 transparent 32×37 PNGs.
 - Two pre-provisioned MissionChief rows are marked provisional until their full catalogue metadata is published.
 - 19 deterministic incident families, 45 semantic modifiers and 31 contextual subjects.
-- 265 current semantic compositions and 455 visually distinct red-state renders.
+- 265 current semantic compositions and 454 visually distinct red-state renders.
 - All official variants retain their stable MissionChief IDs and map to their
   native base slot; the highest variant level is used so escalation is never understated.
 - Light, dark, satellite and greyscale contrast tested at 100% and 50% scale.
