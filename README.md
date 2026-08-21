@@ -3,18 +3,17 @@
 [![Latest release](https://img.shields.io/badge/latest_release-v2.0.1-22c55e)](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1)
 [![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C066-6d5dfc)](data/mission-manifest.json)
 [![Graphics](https://img.shields.io/badge/status_graphics-2%2C613-22c55e)](GALLERY.md)
-[![Icon system](https://img.shields.io/badge/icon_system-Operational_V2-22c7d9)](docs/STYLE_GUIDE.md)
+[![Icon system](https://img.shields.io/badge/icon_system-Operational_V4_RC-f59e0b)](docs/STYLE_GUIDE.md)
 [![QA](https://img.shields.io/badge/automated_QA-passing-22c55e)](data/qa-report.json)
 [![Licence](https://img.shields.io/badge/artwork-CC_BY--NC--SA_4.0-f59e0b)](LICENSE.md)
 
-**A complete, compact mission-marker pack for MissionChief UK.** Operational V2
-combines a mission-aware incident signature, multi-service colour rail,
-permanent **TKB Response Level 1–5**, and accessible red/amber/green map-state
-graphics for every current native slot.
+**A complete premium illustrated mission-marker pack for MissionChief UK.**
+Operational V4 gives every native row a detailed incident scene, an independent
+TKB Response Level 1–5, the required service mix, and shape-coded red, amber and
+green map states.
 
 [Use the pack on MissionChief](https://www.missionchief.co.uk/mission_graphics/539) ·
-[Download v2.0.1](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1) ·
-[Browse every native mission slot](GALLERY.md) ·
+[Browse all mission rows](GALLERY.md) ·
 [MissionChief UK guide](https://tkb-gaming.scot/games/missionchief/guides/) ·
 [TKB MissionChief scripts](https://tkb-gaming.scot/mission-chief-scripts/)
 
@@ -22,54 +21,60 @@ graphics for every current native slot.
 
 ## Current status
 
-| Area | Status | What that means |
+| Area | Status | Exact meaning |
 |---|---|---|
-| Live MissionChief pack | **Synced** | 871 mission rows and all 2,613 red/amber/green images are live. A row-by-row comparison against v2.0.1 found zero name or filename mismatches. |
-| Latest release | **v2.0.1** | The current archive includes the corrected **Ineffective Breathing** marker for native slot `866`. |
-| Automated QA | **Passing** | Catalogue coverage, mappings, PNG integrity, state separation, semantic signatures, colours and half-scale visibility all pass. |
-| Upload queue | **Clear** | No MissionChief image uploads are pending. Future work starts only when MissionChief adds or changes a mission. |
+| Live MissionChief pack | **v2.0.1 synced** | The existing 871 live rows and 2,613 V2 images still match the last public release. V4 has not yet been represented as live. |
+| Repository build | **Operational V4 release candidate** | All 871 rows and all 2,613 V4 state graphics are built from the versioned renderer and curated scene masters. |
+| Latest public release | **v2.0.1** | This remains the latest downloadable GitHub release until V4 is merged, tagged and published. |
+| Automated V4 QA | **Passing** | Coverage, mappings, scene-master coverage, PNG integrity, colour depth, transparency, state separation, unique output and map visibility pass. |
+| V4 upload queue | **2,613 replacements** | Every live red/amber/green image still needs replacing before the live pack can be called V4-synced. |
 
-Normal MissionChief players do **not** need to download the ZIP or upload files
-one by one. Open the [live graphics pack](https://www.missionchief.co.uk/mission_graphics/539)
-and use MissionChief's graphics-pack action. The release archive is provided for
-offline inspection, preservation and maintainers.
+Repository QA, GitHub publication and the live MissionChief upload are three
+separate gates. This table changes only when the corresponding gate is verified.
+
+Normal players do not need to download a ZIP or upload individual files. Open
+the [live graphics pack](https://www.missionchief.co.uk/mission_graphics/539)
+and use MissionChief's graphics-pack action. Release archives are for offline
+inspection, preservation and maintainers.
+
+## What makes V4 different
+
+- **264 curated illustrated scene masters** cover every current semantic
+  family/modifier/subject composition instead of substituting generic centre
+  pictograms.
+- **64 × 83 native RGBA output** preserves the approved scene detail and remains
+  practical as a MissionChief map marker.
+- **2,613 unique PNG streams** ensure every upload row and operational state is
+  deterministic and independently auditable.
+- **Shape-coded state choreography** uses red alert pods, amber movement
+  chevrons and green coverage brackets/tick, so status does not rely on colour
+  alone.
+- **Permanent response-level shield** keeps mission scale independent from live
+  progress.
+- **Real service lightbar** shows the service mix without replacing the incident
+  art.
+- **Native-row identity code** prevents closely related missions from becoming
+  byte-identical while keeping the visible semantic scene consistent.
+
+![Operational V4 catalogue audit](assets/previews/v4-catalogue-audit.png)
 
 ## How to read a marker
 
-Every marker carries four separate signals. They should not be interpreted as
-four versions of the same severity scale.
-
 | Signal | Where it appears | Meaning |
 |---|---|---|
-| Incident signature | Main pictogram | What kind of incident it is, including its main action/hazard and subject |
-| TKB Response Level | Numbered shield `1`–`5` | The estimated gameplay response burden; this number stays fixed |
-| Service rail | Coloured side segments | Which emergency-service mix the mission requires |
-| Map state | Outer colour and shape | Whether the mission needs action, has a response moving, or has its required resources covered |
+| Illustrated scene | Centre aperture | The incident, hazard/action and main subject |
+| TKB Response Level | Numbered shield `1`–`5` | Estimated gameplay response burden; fixed for that row |
+| Service lightbar | Lower illuminated segments | Emergency-service mix required by the mission |
+| Map state | Outer colour and side/top choreography | Action required, response moving, or resources covered |
+| Row identity | Subdued rim/base marks | Stable technical distinction between related native rows |
 
-For example, a **red Level 1** marker is a small mission that still needs action.
-A **green Level 5** marker is a critical-scale mission whose required resources
-are currently covered. Level and live state deliberately remain independent.
+A **red Level 1** marker is a small mission that still needs action. A **green
+Level 5** marker is a critical-scale mission whose required resources are
+covered. Level and state deliberately remain independent.
 
-## Operational V2
+## TKB Response Levels
 
-Every marker is assembled from a deterministic visual grammar rather than a
-single generic service symbol:
-
-- **Mission signature** — incident family, semantic modifier and contextual
-  subject combine to distinguish calls such as a coastguard child search, RTC
-  entrapment, cardiac arrest and a fire with persons reported.
-- **Multi-service rail** — up to three service colours identify the operational
-  mix without consuming the main pictogram.
-- **Shape-coded state** — alert, movement and completion shapes reinforce red,
-  amber and green for colour-blind recognition.
-- **Optical level shield** — the 1–5 response level remains readable on dense
-  maps without obscuring the incident.
-- **Dual map keyline** — the marker survives light, dark, satellite and
-  greyscale backgrounds at full and half scale.
-
-## What the number means
-
-| Level | TKB Response Level | Practical meaning |
+| Level | Label | Practical meaning |
 |---:|---|---|
 | 1 | Routine | Planned, welfare, minor or very small response |
 | 2 | Standard | Normal single-service emergency or straightforward medical call |
@@ -77,58 +82,40 @@ single generic service symbol:
 | 4 | Major | Large command-led response, complex rescue or significant hazard |
 | 5 | Critical | Mass casualty, aircraft, rail, industrial, nuclear or catastrophic incident |
 
-The number is calculated from the mission's current vehicles, personnel,
-specialist resources, services, patient potential, clinical acuity, hazards and
-bounded credit value. It is a community gameplay aid—not an official UK
-emergency-service grade. The complete, auditable scoring breakdown is in
+The level is calculated from current vehicle/personnel requirements, specialist
+resources, services, patient potential, clinical acuity, hazards and bounded
+credit value. It is a community gameplay aid, not an official UK emergency-
+service grade. The auditable score and components are in
 [`data/mission-manifest.json`](data/mission-manifest.json).
 
-## Map state
+## MissionChief map states
 
-| State | Shape | Meaning |
+| State | Shape cue | Exact meaning |
 |---|---|---|
-| **Red — attention required** | Circular alert mark | The mission is new or still requires player action/resources. Red does **not** mean “Level 5”. |
-| **Amber — response moving** | Diamond movement chevrons | A response is under way, normally with units assigned or travelling, but the required coverage is not yet complete. |
-| **Green — resources covered** | Circular tick | MissionChief considers the required resources covered/on scene. Green does not necessarily mean the mission has finished, paid out or disappeared. |
+| **Red — attention required** | Alert pods, exclamation marks and radio arcs | New mission or action/resources still required |
+| **Amber — response moving** | Directional chevrons | Units assigned or travelling; coverage incomplete |
+| **Green — resources covered** | Coverage brackets and tick | Declared requirements covered/on scene |
 
-MissionChief switches these images automatically. The response-level badge stays
-fixed, so **mission scale** and **live progress** remain separate signals. See
-[Status and signal guide](docs/STATUS_GUIDE.md) for examples and every repository
-status term.
-
-![Amber-state overview](assets/previews/overview-yellow.png)
+Green does not necessarily mean completed, paid out or removed from the map.
+MissionChief switches the three images automatically. See
+[Status and signal guide](docs/STATUS_GUIDE.md).
 
 ## Complete coverage
 
 - 1,066/1,066 current official UK catalogue records mapped.
-- 869/869 current native mission slots plus Hand-off and Custom Alliance covered.
-- 2,613 transparent 32×37 PNGs.
-- Two pre-provisioned MissionChief rows are marked provisional until their full catalogue metadata is published.
-- 19 deterministic incident families, 45 semantic modifiers and 31 contextual subjects.
-- 265 current semantic compositions and 454 visually distinct red-state renders.
-- All official variants retain their stable MissionChief IDs and map to their
-  native base slot; the highest variant level is used so escalation is never understated.
-- Light, dark, satellite and greyscale contrast tested at 100% and 50% scale.
-- New mission IDs are checked automatically and proposed through a validated PR.
+- 869/869 numbered native mission slots, plus Hand-off and Custom Alliance.
+- 871 upload rows and 2,613 transparent 64 × 83 RGBA PNGs.
+- 264 semantic compositions backed by 264 curated scene masters.
+- 871 unique row codes and 2,613 unique final PNG byte streams.
+- Two visible rows remain conservatively provisioned until their complete
+  official catalogue metadata is published.
+- Light, dark, satellite and greyscale contrast checked at native and 50% scale.
 
-The two provisional rows are real MissionChief-native slots visible before the
-full official catalogue requirements are published. They use conservative
-classifications and are automatically replaced when authoritative metadata
-arrives. See [`data/provisional-slots.json`](data/provisional-slots.json).
+Official variants retain stable MissionChief IDs and map to their native base
+slot. Each row takes the highest response level among its current variants so
+escalation is never understated.
 
-## Download and verify v2.0.1
-
-- [Release page and notes](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1)
-- [Download the verified ZIP](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/download/v2.0.1/UK-Emergency-Response-Icons-Reborn-2026-v2.0.1.zip)
-- [Download the SHA-256 file](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/download/v2.0.1/UK-Emergency-Response-Icons-Reborn-2026-v2.0.1.zip.sha256)
-
-Expected ZIP SHA-256:
-
-```text
-682f099d30e2be0465b888d53b483e3e1ecf322ccd6fb1c13e1ee2c78d8eb758
-```
-
-## Rebuild locally
+## Rebuild and verify
 
 ```bash
 python -m pip install -r requirements.txt
@@ -136,14 +123,15 @@ python scripts/sync_catalogue.py
 python scripts/build_icons.py
 python scripts/validate_pack.py
 python scripts/build_previews.py
-python scripts/package_release.py
+PACK_VERSION=4.0.0 python scripts/package_release.py
 ```
 
-See [the classification model](docs/CLASSIFICATION.md) and
-[the icon style guide](docs/STYLE_GUIDE.md) for the versioned design contract.
+See [the classification model](docs/CLASSIFICATION.md),
+[the icon style guide](docs/STYLE_GUIDE.md), and
+[the V4 release notes](docs/RELEASE_v4.0.0.md).
 
 ## Licence
 
-The build and validation code is MIT licensed. Generated artwork is licensed
+Build and validation code is MIT licensed. Generated artwork is licensed
 CC BY-NC-SA 4.0. MissionChief names and game data belong to their respective
 owners. See [LICENSE.md](LICENSE.md).

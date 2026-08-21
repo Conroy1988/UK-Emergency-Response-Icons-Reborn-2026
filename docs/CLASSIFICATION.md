@@ -32,10 +32,10 @@ contains additive variants. Every official record is classified independently;
 the native slot displays the highest level among its current variants. This
 prevents an escalated variant from appearing less serious than its base call.
 
-## Operational V2 signature classification
+## Operational V4 scene classification
 
 Response level and visual identity remain separate deterministic decisions.
-After the level is calculated, Operational V2 derives three visual layers from
+After the level is calculated, Operational V4 derives three semantic layers from
 the canonical mission title and classified service data:
 
 - incident family for the dominant silhouette;
@@ -43,7 +43,11 @@ the canonical mission title and classified service data:
 - contextual subject for the person, vehicle, premises, environment or
   infrastructure involved.
 
-Required services populate the segmented service rail independently of those
-three layers. The complete values are stored for every record and upload slot in
-`data/mission-manifest.json`, making visual changes auditable alongside level
-changes.
+The semantic signature selects one of 264 curated illustrated scene masters.
+Required services populate the lower lightbar independently of those three
+semantic layers. A stable slot/title scene code supplies subordinate anti-twin
+rim and base marks without changing the mission meaning.
+
+The complete family, modifier, subject, signature, chassis and scene-code values
+are stored for every record and upload slot in `data/mission-manifest.json`,
+making visual changes auditable alongside level changes.
