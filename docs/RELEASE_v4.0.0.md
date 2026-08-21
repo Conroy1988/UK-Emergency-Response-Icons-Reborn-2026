@@ -41,6 +41,18 @@ The MissionChief pack was fully replaced and audited on 2026-08-21:
   near the coast` to the current live row `Multi Agency Training Exercise
   (Small)` before its V4 images were uploaded.
 
-This live checkpoint does not by itself publish the GitHub release. The latest
-downloadable release remains v2.0.1 until the V4 pull request is merged, tagged
-and released.
+## GitHub publication checkpoint
+
+Operational V4 was published on 2026-08-21:
+
+- PR #12 was squash-merged as commit
+  `dcd9506115839e2c72d1f55a4fc6d9e35069f501`.
+- Release workflow run `32471758841` completed successfully, including the
+  deterministic build, validation, previews, packaging and release steps.
+- Tag and public release: `v4.0.0`.
+- Published assets: the versioned ZIP and its SHA-256 file.
+- ZIP SHA-256:
+  `e3a2a012a4f100c13a16ed572696867c19483522b77d3c6449b9a8b723e5e741`.
+
+Repository QA, GitHub publication and the audited MissionChief upload are now
+all complete.
