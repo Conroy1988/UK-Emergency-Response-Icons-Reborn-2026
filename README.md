@@ -1,6 +1,6 @@
 # UK Emergency Response Icons Reborn 2026
 
-[![Latest release](https://img.shields.io/badge/latest_release-v2.0.1-22c55e)](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1)
+[![Latest release](https://img.shields.io/badge/latest_release-v4.0.0-22c55e)](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0)
 [![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C066-6d5dfc)](data/mission-manifest.json)
 [![Graphics](https://img.shields.io/badge/status_graphics-2%2C613-22c55e)](GALLERY.md)
 [![Icon system](https://img.shields.io/badge/icon_system-Operational_V4_live-22c55e)](docs/STYLE_GUIDE.md)
@@ -13,6 +13,7 @@ TKB Response Level 1–5, the required service mix, and shape-coded red, amber a
 green map states.
 
 [Use the pack on MissionChief](https://www.missionchief.co.uk/mission_graphics/539) ·
+[Download v4.0.0](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0) ·
 [Browse all mission rows](GALLERY.md) ·
 [MissionChief UK guide](https://tkb-gaming.scot/games/missionchief/guides/) ·
 [TKB MissionChief scripts](https://tkb-gaming.scot/mission-chief-scripts/)
@@ -24,14 +25,13 @@ green map states.
 | Area | Status | Exact meaning |
 |---|---|---|
 | Live MissionChief pack | **Operational V4 synced** | On 2026-08-21 all 871 live rows and all 2,613 red/amber/green images were replaced and audited against this manifest. |
-| Repository build | **Operational V4 · PR #12** | All 871 rows and all 2,613 V4 state graphics are built from the versioned renderer and curated scene masters; the publication branch is in [PR #12](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/pull/12). |
-| Latest public release | **v2.0.1** | This remains the latest downloadable GitHub release until V4 is merged, tagged and published. |
+| Repository publication | **Operational V4 published** | [PR #12](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/pull/12) was squash-merged as commit [`dcd9506`](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/commit/dcd9506115839e2c72d1f55a4fc6d9e35069f501). |
+| Latest public release | **v4.0.0** | The [public release](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0) contains the versioned ZIP and SHA-256 file; the release workflow completed successfully. |
 | Automated V4 QA | **Passing** | Coverage, mappings, scene-master coverage, PNG integrity, colour depth, transparency, state separation, unique output and map visibility pass. |
 | V4 upload queue | **Clear · 0 replacements** | The live audit found 871 rows, 2,613 fresh server timestamps, 2,613 expected filenames/state paths and zero mismatches. |
 
 Repository QA, GitHub release publication and the live MissionChief upload are
-three separate gates. The V4 images are live even though v2.0.1 remains the
-newest downloadable GitHub release until PR #12 is merged and V4 is tagged.
+three separate gates. All three Operational V4 gates are complete.
 
 Normal players do not need to download a ZIP or upload individual files. Open
 the [live graphics pack](https://www.missionchief.co.uk/mission_graphics/539)
@@ -115,6 +115,18 @@ MissionChief switches the three images automatically. See
 Official variants retain stable MissionChief IDs and map to their native base
 slot. Each row takes the highest response level among its current variants so
 escalation is never understated.
+
+## Download and verify v4.0.0
+
+- [Release page and notes](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0)
+- [Download the verified ZIP](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/download/v4.0.0/UK-Emergency-Response-Icons-Reborn-2026-v4.0.0.zip)
+- [Download the SHA-256 file](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/download/v4.0.0/UK-Emergency-Response-Icons-Reborn-2026-v4.0.0.zip.sha256)
+
+Expected ZIP SHA-256:
+
+```text
+e3a2a012a4f100c13a16ed572696867c19483522b77d3c6449b9a8b723e5e741
+```
 
 ## Rebuild and verify
 

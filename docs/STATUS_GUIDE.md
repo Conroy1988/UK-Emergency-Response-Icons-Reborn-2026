@@ -66,9 +66,11 @@ Green does not guarantee completion, payout or removal from the map.
 
 ## Current checkpoint
 
-- Public GitHub release: **v2.0.1**.
-- GitHub Operational V4 publication: **PR #12 open; branch published and CI
-  passing**.
+- Public GitHub release: **v4.0.0**, published on 2026-08-21 with the versioned
+  ZIP and SHA-256 file.
+- GitHub Operational V4 publication: **complete**; PR #12 was squash-merged as
+  commit `dcd9506115839e2c72d1f55a4fc6d9e35069f501` and release workflow run
+  `32471758841` completed successfully.
 - Live MissionChief pack: **Operational V4 synced on 2026-08-21**, 871 rows and
   2,613 images.
 - Operational V4 repository build: **complete and QA passing**, 871 rows and
@@ -78,5 +80,6 @@ Green does not guarantee completion, payout or removal from the map.
   filenames and state paths, zero mismatches**.
 
 Passing repository QA, a successful live-pack audit and a published GitHub
-release are separate facts. The live pack is V4-synced now; v2.0.1 remains the
-latest downloadable GitHub release until PR #12 is merged and V4 is tagged.
+release are separate facts. All three Operational V4 gates are complete. The
+published ZIP SHA-256 is
+`e3a2a012a4f100c13a16ed572696867c19483522b77d3c6449b9a8b723e5e741`.
