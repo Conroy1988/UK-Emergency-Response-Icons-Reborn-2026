@@ -3,7 +3,7 @@
 [![Latest release](https://img.shields.io/badge/latest_release-v2.0.1-22c55e)](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v2.0.1)
 [![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C066-6d5dfc)](data/mission-manifest.json)
 [![Graphics](https://img.shields.io/badge/status_graphics-2%2C613-22c55e)](GALLERY.md)
-[![Icon system](https://img.shields.io/badge/icon_system-Operational_V4_RC-f59e0b)](docs/STYLE_GUIDE.md)
+[![Icon system](https://img.shields.io/badge/icon_system-Operational_V4_live-22c55e)](docs/STYLE_GUIDE.md)
 [![QA](https://img.shields.io/badge/automated_QA-passing-22c55e)](data/qa-report.json)
 [![Licence](https://img.shields.io/badge/artwork-CC_BY--NC--SA_4.0-f59e0b)](LICENSE.md)
 
@@ -23,14 +23,15 @@ green map states.
 
 | Area | Status | Exact meaning |
 |---|---|---|
-| Live MissionChief pack | **v2.0.1 synced** | The existing 871 live rows and 2,613 V2 images still match the last public release. V4 has not yet been represented as live. |
-| Repository build | **Operational V4 release candidate** | All 871 rows and all 2,613 V4 state graphics are built from the versioned renderer and curated scene masters. |
+| Live MissionChief pack | **Operational V4 synced** | On 2026-08-21 all 871 live rows and all 2,613 red/amber/green images were replaced and audited against this manifest. |
+| Repository build | **Operational V4 · PR #12** | All 871 rows and all 2,613 V4 state graphics are built from the versioned renderer and curated scene masters; the publication branch is in [PR #12](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/pull/12). |
 | Latest public release | **v2.0.1** | This remains the latest downloadable GitHub release until V4 is merged, tagged and published. |
 | Automated V4 QA | **Passing** | Coverage, mappings, scene-master coverage, PNG integrity, colour depth, transparency, state separation, unique output and map visibility pass. |
-| V4 upload queue | **2,613 replacements** | Every live red/amber/green image still needs replacing before the live pack can be called V4-synced. |
+| V4 upload queue | **Clear · 0 replacements** | The live audit found 871 rows, 2,613 fresh server timestamps, 2,613 expected filenames/state paths and zero mismatches. |
 
-Repository QA, GitHub publication and the live MissionChief upload are three
-separate gates. This table changes only when the corresponding gate is verified.
+Repository QA, GitHub release publication and the live MissionChief upload are
+three separate gates. The V4 images are live even though v2.0.1 remains the
+newest downloadable GitHub release until PR #12 is merged and V4 is tagged.
 
 Normal players do not need to download a ZIP or upload individual files. Open
 the [live graphics pack](https://www.missionchief.co.uk/mission_graphics/539)

@@ -67137,32 +67137,37 @@
     {
       "order": 870,
       "slot_id": "867",
-      "name": "Jet ski near the coast",
+      "name": "Multi Agency Training Exercise (Small)",
       "source_kind": "provisional",
       "mission_ids": [],
       "variant_count": 0,
-      "level": 2,
+      "level": 3,
       "score": 0.0,
       "components": {},
       "max_level_source_mission_id": null,
-      "primary_service": "marine",
+      "primary_service": "mixed",
       "services": [
-        "marine"
+        "fire",
+        "police",
+        "ambulance"
       ],
-      "family": "marine",
-      "modifier": "marine",
-      "subject": "vessel",
-      "signature": "marine:marine:vessel",
-      "chassis": "wave_keel",
-      "scene_code": "BAFD11",
+      "family": "response",
+      "modifier": "response",
+      "subject": "response",
+      "signature": "response:response:response",
+      "chassis": "response_roundel",
+      "scene_code": "4ABFB5",
       "categories": [
-        "coastal"
+        "fire",
+        "police",
+        "ambulance",
+        "training"
       ],
-      "provisional_rationale": "Pre-provisioned native slot; conservative coastal-response classification pending official requirements.",
+      "provisional_rationale": "MissionChief live-row name verified on 2026-08-21; conservative three-service training classification pending official requirements.",
       "files": {
-        "red": "assets/icons/red/0870--867--jet-ski-near-the-coast.png",
-        "yellow": "assets/icons/yellow/0870--867--jet-ski-near-the-coast.png",
-        "green": "assets/icons/green/0870--867--jet-ski-near-the-coast.png"
+        "red": "assets/icons/red/0870--867--multi-agency-training-exercise-small.png",
+        "yellow": "assets/icons/yellow/0870--867--multi-agency-training-exercise-small.png",
+        "green": "assets/icons/green/0870--867--multi-agency-training-exercise-small.png"
       }
     },
     {

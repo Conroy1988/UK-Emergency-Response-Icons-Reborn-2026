@@ -13,8 +13,8 @@
   "image_count": 2613,
   "level_distribution": {
     "1": 208,
-    "2": 213,
-    "3": 202,
+    "2": 212,
+    "3": 203,
     "4": 177,
     "5": 71
   },
@@ -29,13 +29,13 @@
     "eod": 34,
     "fire": 272,
     "hazmat": 26,
-    "marine": 33,
+    "marine": 32,
     "medical": 131,
     "mountain": 11,
     "police": 98,
     "rail": 39,
     "rescue": 29,
-    "response": 2,
+    "response": 3,
     "utilities": 8,
     "weather": 30
   },
@@ -98,7 +98,7 @@
     {
       "name": "all_levels_present",
       "passed": true,
-      "detail": "Counter({2: 213, 1: 208, 3: 202, 4: 177, 5: 71})"
+      "detail": "Counter({2: 212, 1: 208, 3: 203, 4: 177, 5: 71})"
     },
     {
       "name": "all_states_declared",

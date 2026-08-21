@@ -432,7 +432,6 @@
 | `861` Knifepoint Robbery of a Person · 1 catalogue variant | ![](assets/icons/red/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/yellow/0864--861--knifepoint-robbery-of-a-person.png) | ![](assets/icons/green/0864--861--knifepoint-robbery-of-a-person.png) | crime · weapon · person |
 | `863` Fallen Down Stairs · 1 catalogue variant | ![](assets/icons/red/0866--863--fallen-down-stairs.png) | ![](assets/icons/yellow/0866--863--fallen-down-stairs.png) | ![](assets/icons/green/0866--863--fallen-down-stairs.png) | medical · fall · response |
 | `866` Ineffective Breathing | ![](assets/icons/red/0869--866--ineffective-breathing.png) | ![](assets/icons/yellow/0869--866--ineffective-breathing.png) | ![](assets/icons/green/0869--866--ineffective-breathing.png) | medical · lungs · response |
-| `867` Jet ski near the coast | ![](assets/icons/red/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/yellow/0870--867--jet-ski-near-the-coast.png) | ![](assets/icons/green/0870--867--jet-ski-near-the-coast.png) | marine · marine · vessel |
 ## Level 3
 
 | Mission slot | Red | Amber | Green | Signature |
@@ -638,6 +637,7 @@
 | `846` Fans fight at basketball game · 1 catalogue variant | ![](assets/icons/red/0849--846--fans-fight-at-basketball-game.png) | ![](assets/icons/yellow/0849--846--fans-fight-at-basketball-game.png) | ![](assets/icons/green/0849--846--fans-fight-at-basketball-game.png) | crowd · violence · crowd |
 | `847` Truck overturned by strong winds · 2 catalogue variants | ![](assets/icons/red/0850--847--truck-overturned-by-strong-winds.png) | ![](assets/icons/yellow/0850--847--truck-overturned-by-strong-winds.png) | ![](assets/icons/green/0850--847--truck-overturned-by-strong-winds.png) | collision · collision · hgv |
 | `864` Lost child at the beach · 1 catalogue variant | ![](assets/icons/red/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/yellow/0867--864--lost-child-at-the-beach.png) | ![](assets/icons/green/0867--864--lost-child-at-the-beach.png) | marine · search · child |
+| `867` Multi Agency Training Exercise (Small) | ![](assets/icons/red/0870--867--multi-agency-training-exercise-small.png) | ![](assets/icons/yellow/0870--867--multi-agency-training-exercise-small.png) | ![](assets/icons/green/0870--867--multi-agency-training-exercise-small.png) | response · response · response |
 | `868` Lost Child at Beach - Coastguard Search · 1 catalogue variant | ![](assets/icons/red/0871--868--lost-child-at-beach-coastguard-search.png) | ![](assets/icons/yellow/0871--868--lost-child-at-beach-coastguard-search.png) | ![](assets/icons/green/0871--868--lost-child-at-beach-coastguard-search.png) | marine · search · child |
 ## Level 4
 

@@ -28,3 +28,19 @@ rows and all 2,613 red/amber/green state images.
 The repository build, GitHub release and live MissionChief pack are reported
 independently. V4 is called live only after every MissionChief image has been
 replaced and the live pack has been audited against the final manifest.
+
+## Live synchronization checkpoint
+
+The MissionChief pack was fully replaced and audited on 2026-08-21:
+
+- 871/871 live mission rows present.
+- 2,613/2,613 red, amber and green images carry fresh server update timestamps.
+- 2,613/2,613 live filenames and state paths match the V4 manifest.
+- Zero missing, stale or mismatched live images.
+- Native slot `867` was corrected from the retired provisional name `Jet ski
+  near the coast` to the current live row `Multi Agency Training Exercise
+  (Small)` before its V4 images were uploaded.
+
+This live checkpoint does not by itself publish the GitHub release. The latest
+downloadable release remains v2.0.1 until the V4 pull request is merged, tagged
+and released.

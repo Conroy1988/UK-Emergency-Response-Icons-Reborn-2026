@@ -67,11 +67,16 @@ Green does not guarantee completion, payout or removal from the map.
 ## Current checkpoint
 
 - Public GitHub release: **v2.0.1**.
-- Live MissionChief pack: **v2.0.1 synced**, 871 rows and 2,613 images.
-- Operational V4 release candidate: **complete and QA passing**, 871 rows and
-  2,613 locally generated images.
-- V4 live upload queue: **2,613 replacements pending publication and upload**.
+- GitHub Operational V4 publication: **PR #12 open; branch published and CI
+  passing**.
+- Live MissionChief pack: **Operational V4 synced on 2026-08-21**, 871 rows and
+  2,613 images.
+- Operational V4 repository build: **complete and QA passing**, 871 rows and
+  2,613 generated images backed by 264 scene masters.
+- V4 live upload queue: **clear; 0 replacements pending**.
+- Live audit: **2,613/2,613 fresh server timestamps, 2,613/2,613 expected
+  filenames and state paths, zero mismatches**.
 
-Passing repository QA and a successful live-pack audit are separate facts. V4
-will not be labelled live until the MissionChief rows have been replaced and
-checked against the final manifest.
+Passing repository QA, a successful live-pack audit and a published GitHub
+release are separate facts. The live pack is V4-synced now; v2.0.1 remains the
+latest downloadable GitHub release until PR #12 is merged and V4 is tagged.
