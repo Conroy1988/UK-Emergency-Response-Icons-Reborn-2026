@@ -1,21 +1,18 @@
 # Status and signal guide
 
-Operational V2 separates **what the mission is**, **how large its expected
-response is**, **which services it needs**, and **what is happening right now**.
-This prevents one colour or number from trying to communicate everything.
+Operational V4 separates what the mission is, how large its expected response
+is, which services it needs, and what is happening right now.
 
-## The four marker signals
+## Marker signals
 
-### 1. Incident signature
+### Illustrated incident scene
 
-The central pictogram identifies the incident family, its main action or hazard,
-and the subject involved. A coastguard child search, RTC entrapment and breathing
-emergency therefore remain visually distinguishable even when they share a
+The centre illustration combines the incident family, action/hazard and main
+subject. A coastguard child search, RTC entrapment, seizure, weapon incident,
+derailment and aircraft crash remain visually distinct even when they share a
 response level.
 
-### 2. TKB Response Level 1–5
-
-The permanent number estimates gameplay response burden:
+### TKB Response Level 1–5
 
 | Level | Label | Typical meaning |
 |---:|---|---|
@@ -25,67 +22,61 @@ The permanent number estimates gameplay response burden:
 | 4 | Major | Large command-led response, complex rescue or significant hazard |
 | 5 | Critical | Mass casualty, aircraft, rail, industrial, nuclear or catastrophic incident |
 
-The number is calculated from MissionChief requirements and remains fixed while
-the mission progresses. It is a community gameplay aid, not an official UK
-emergency-service grade or clinical triage category.
+The level stays fixed while the mission progresses. It is a gameplay aid, not
+an official grade or clinical triage category.
 
-### 3. Service rail
+### Service lightbar
 
-The coloured side rail shows the operational service mix:
+The lower segments show who is needed: fire, police, ambulance,
+marine/coastguard, mountain rescue, air, rail, hazmat or mixed. They do not show
+the live mission state.
 
-| Colour | Service |
-|---|---|
-| Red-orange | Fire |
-| Blue | Police |
-| Green | Ambulance |
-| Cyan | Marine/coastguard |
-| Purple | Mountain rescue |
-| Gold | Air |
-| Magenta | Rail |
-| Lime | Hazmat |
+### MissionChief map state
 
-Up to three service colours appear in a stable order. The rail describes who is
-required; it does not describe the live mission state.
-
-### 4. MissionChief map state
-
-| State | Visual language | What it tells the player |
+| State | Operational choreography | What it tells the player |
 |---|---|---|
-| Red | Circular alert mark | The mission is new or still needs action/resources |
-| Amber | Diamond movement chevrons | A response is assigned or travelling, but required coverage is not complete |
-| Green | Circular tick | Required resources are covered/on scene |
+| Red | Alert pods, exclamation marks and radio arcs | New mission or action/resources required |
+| Amber | Directional chevrons | Response assigned or travelling; coverage incomplete |
+| Green | Coverage brackets and tick | Required resources covered/on scene |
 
-MissionChief chooses the state image automatically. Green represents resource
-coverage; it does not guarantee that the mission has completed, paid out or
-left the map.
+Green does not guarantee completion, payout or removal from the map.
 
 ## Common combinations
 
 - **Red Level 1:** a small call that still needs attention.
-- **Amber Level 4:** a major response is moving but is not yet fully covered.
-- **Green Level 5:** a critical-scale incident whose declared requirements are
-  covered/on scene; the operation may still be active.
+- **Amber Level 4:** a major response is moving but not fully covered.
+- **Green Level 5:** a critical-scale incident whose requirements are covered;
+  the operation may still be active.
 
 ## Repository and pack status terms
 
 | Term | Exact meaning |
 |---|---|
-| Latest release | The newest published, downloadable and checksummed GitHub package |
-| QA passing | Every deterministic catalogue, mapping, PNG, state, colour, signature and visibility check passed |
-| Live pack synced | The public MissionChief rows and filenames were compared with the release manifest and matched |
-| Upload queue clear | No image files currently need adding or replacing on MissionChief |
-| Official slot | A current native MissionChief slot backed by published catalogue data |
-| Legacy slot | A native slot retained for complete pack compatibility although it is absent from the current active catalogue |
-| Provisional slot | A native row visible in MissionChief before its full official requirements are published; it uses a conservative temporary classification |
-| Special row | Hand-off Mission or Custom Alliance Mission, which sits outside the numbered native catalogue |
+| Latest public release | Newest published, downloadable and checksummed GitHub package |
+| Release candidate | Complete QA-passing build that is not yet represented as published or live |
+| QA passing | Deterministic catalogue, mapping, scene, PNG, state, uniqueness and visibility checks all passed |
+| GitHub published | Exact commit is merged and its release archive/tag are public |
+| Live pack synced | MissionChief rows and images were checked against a named release manifest and matched |
+| Upload queue clear | No image files need adding or replacing on MissionChief |
+| Upload replacement pending | Live rows exist, but their images still need replacing with a newer approved build |
+| Official slot | Current native MissionChief row backed by published catalogue data |
+| Legacy slot | Native row retained for compatibility although absent from the active catalogue |
+| Provisional slot | Visible native row awaiting complete official metadata; conservatively classified |
+| Special row | Hand-off Mission or Custom Alliance Mission outside the numbered catalogue |
 
-## What “QA passing” does and does not mean
+## Current checkpoint
 
-Passing QA confirms that the repository builds deterministically and that its
-declared pack is internally complete. The separate live-pack audit confirms that
-MissionChief is actually using the same mission names and filenames. Both checks
-are reported because a correct repository and a correctly uploaded live pack are
-different things.
+- Public GitHub release: **v2.0.1**.
+- GitHub Operational V4 publication: **PR #12 open; branch published and CI
+  passing**.
+- Live MissionChief pack: **Operational V4 synced on 2026-08-21**, 871 rows and
+  2,613 images.
+- Operational V4 repository build: **complete and QA passing**, 871 rows and
+  2,613 generated images backed by 264 scene masters.
+- V4 live upload queue: **clear; 0 replacements pending**.
+- Live audit: **2,613/2,613 fresh server timestamps, 2,613/2,613 expected
+  filenames and state paths, zero mismatches**.
 
-Current checkpoint: **v2.0.1, 871 rows, 2,613 images, zero live mismatches and no
-pending uploads**.
+Passing repository QA, a successful live-pack audit and a published GitHub
+release are separate facts. The live pack is V4-synced now; v2.0.1 remains the
+latest downloadable GitHub release until PR #12 is merged and V4 is tagged.

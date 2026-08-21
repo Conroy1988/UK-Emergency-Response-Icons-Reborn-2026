@@ -19,10 +19,13 @@ def main() -> None:
     report=json.loads((ROOT/"data"/"qa-report.json").read_text())
     if not report.get("all_passed"): raise SystemExit("QA report is not green")
     DIST.mkdir(exist_ok=True); target=DIST/NAME
-    include=[ROOT/"assets"/"icons",ROOT/"assets"/"previews",ROOT/"data"/"mission-manifest.json",ROOT/"data"/"mission-manifest.csv",ROOT/"data"/"classifier-profile.json",ROOT/"data"/"legacy-slots.json",ROOT/"data"/"provisional-slots.json",ROOT/"data"/"qa-report.json",ROOT/"docs",ROOT/"README.md",ROOT/"LICENSE.md"]
+    include=[ROOT/"assets"/"icons",ROOT/"assets"/"scenes",ROOT/"assets"/"previews",ROOT/"data"/"mission-manifest.json",ROOT/"data"/"mission-manifest.csv",ROOT/"data"/"classifier-profile.json",ROOT/"data"/"legacy-slots.json",ROOT/"data"/"provisional-slots.json",ROOT/"data"/"qa-report.json",ROOT/"docs",ROOT/"scripts",ROOT/"requirements.txt",ROOT/"README.md",ROOT/"GALLERY.md",ROOT/"LICENSE.md"]
     files=[]
     for item in include:
-        files.extend(sorted(p for p in item.rglob("*") if p.is_file())) if item.is_dir() else files.append(item)
+        if item.is_dir():
+            files.extend(sorted(p for p in item.rglob("*") if p.is_file() and "__pycache__" not in p.parts))
+        else:
+            files.append(item)
     with zipfile.ZipFile(target,"w",zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for path in sorted(set(files)):
             info=zipfile.ZipInfo(path.relative_to(ROOT).as_posix(),date_time=(2026,8,5,0,0,0)); info.compress_type=zipfile.ZIP_DEFLATED; info.external_attr=0o644<<16

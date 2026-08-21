@@ -1,6 +1,6 @@
 {
-  "schema_version": 2,
-  "style_version": "2.0",
+  "schema_version": 4,
+  "style_version": "4.0",
   "all_passed": true,
   "catalogue_record_count": 1066,
   "official_slot_count": 869,
@@ -13,8 +13,8 @@
   "image_count": 2613,
   "level_distribution": {
     "1": 208,
-    "2": 213,
-    "3": 202,
+    "2": 212,
+    "3": 203,
     "4": 177,
     "5": 71
   },
@@ -29,13 +29,13 @@
     "eod": 34,
     "fire": 272,
     "hazmat": 26,
-    "marine": 29,
-    "medical": 132,
+    "marine": 32,
+    "medical": 131,
     "mountain": 11,
-    "police": 99,
+    "police": 98,
     "rail": 39,
-    "rescue": 31,
-    "response": 2,
+    "rescue": 29,
+    "response": 3,
     "utilities": 8,
     "weather": 30
   },
@@ -98,17 +98,22 @@
     {
       "name": "all_levels_present",
       "passed": true,
-      "detail": "Counter({2: 213, 1: 208, 3: 202, 4: 177, 5: 71})"
+      "detail": "Counter({2: 212, 1: 208, 3: 203, 4: 177, 5: 71})"
     },
     {
       "name": "all_states_declared",
       "passed": true,
-      "detail": "{'red': '#ff4357', 'yellow': '#ffc145', 'green': '#32d583'}"
+      "detail": "{'red': '#ff183f', 'yellow': '#ffb000', 'green': '#00d96f'}"
     },
     {
-      "name": "operational_v2_style",
+      "name": "operational_v4_style",
       "passed": true,
-      "detail": "2.0"
+      "detail": "schema 4 \u00b7 style 4.0"
+    },
+    {
+      "name": "operational_v4_features",
+      "passed": true,
+      "detail": "['integrated_response_shield', 'multi_service_lightbar', 'native_row_identity_code', 'premium_illustrated_scene_masters', 'semantic_scene_mapping', 'state_choreography']"
     },
     {
       "name": "mission_signature_coverage",
@@ -118,7 +123,17 @@
     {
       "name": "semantic_signature_depth",
       "passed": true,
-      "detail": "265 distinct semantic compositions"
+      "detail": "264 distinct semantic compositions"
+    },
+    {
+      "name": "family_chassis_coverage",
+      "passed": true,
+      "detail": "871 slots \u00b7 13 chassis"
+    },
+    {
+      "name": "incident_scene_code_coverage",
+      "passed": true,
+      "detail": "871 slots \u00b7 871 distinct codes"
     },
     {
       "name": "semantic_token_boundaries",
@@ -129,6 +144,16 @@
       "name": "eod_signature_routing",
       "passed": true,
       "detail": ""
+    },
+    {
+      "name": "premium_scene_master_count",
+      "passed": true,
+      "detail": "264 files \u00b7 264 expected"
+    },
+    {
+      "name": "premium_scene_master_coverage",
+      "passed": true,
+      "detail": "264/264 signatures"
     },
     {
       "name": "three_files_per_slot",
@@ -153,12 +178,17 @@
     {
       "name": "unique_render_hashes",
       "passed": true,
-      "detail": "1362 distinct renders"
+      "detail": "2613 distinct renders"
     },
     {
       "name": "mission_aware_red_renders",
       "passed": true,
-      "detail": "454 distinct red-state renders"
+      "detail": "871 distinct red-state renders"
+    },
+    {
+      "name": "premium_scene_colour_depth",
+      "passed": true,
+      "detail": "minimum 2779 colours"
     }
   ],
   "errors": []

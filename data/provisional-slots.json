@@ -14,13 +14,13 @@
     },
     {
       "slot_id": "867",
-      "name": "Jet ski near the coast",
-      "level": 2,
-      "primary_service": "marine",
-      "services": ["marine"],
-      "family": "marine",
-      "categories": ["coastal"],
-      "rationale": "Pre-provisioned native slot; conservative coastal-response classification pending official requirements."
+      "name": "Multi Agency Training Exercise (Small)",
+      "level": 3,
+      "primary_service": "mixed",
+      "services": ["fire", "police", "ambulance"],
+      "family": "response",
+      "categories": ["fire", "police", "ambulance", "training"],
+      "rationale": "MissionChief live-row name verified on 2026-08-21; conservative three-service training classification pending official requirements."
     }
   ]
 }

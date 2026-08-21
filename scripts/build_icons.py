@@ -13,7 +13,18 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Iterable
 
-from icon_style_v2 import HEIGHT, LEVEL_COLOURS, STATES, WIDTH, render_icon, signature_for
+from icon_style_v4 import (
+    HEIGHT,
+    LEVEL_COLOURS,
+    STATES,
+    STYLE_FEATURES,
+    STYLE_VERSION,
+    WIDTH,
+    chassis_for,
+    render_icon,
+    scene_code_for,
+    signature_for,
+)
 
 SEVERE_TERMS = re.compile(
     r"major|mass casualty|catastroph|nuclear|cbrne|aircraft (?:crash|accident)|"
@@ -32,7 +43,7 @@ FAMILY_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("eod", re.compile(r"bomb|grenade|eod|explosive|ordnance|munition|suspicious package|firework", re.I)),
     ("aircraft", re.compile(r"\b(?:aircraft|airfield|airport|helicopter|runway|plane)\b|bird strike", re.I)),
     ("rail", re.compile(r"\b(?:train|tram|subway|locomotive)\b|\brail(?:way)?\b", re.I)),
-    ("marine", re.compile(r"\b(?:boat|ship|vessel|sea|coast|canoe|kayak|lifeboat|river)\b|drown|water rescue|offshore|harbour", re.I)),
+    ("marine", re.compile(r"\b(?:boat|ship|vessel|sea|coast|coastguard|beach|tide|canoe|kayak|lifeboat|river|swimmer|surfer)\b|drown|water rescue|offshore|harbour", re.I)),
     ("mountain", re.compile(r"mountain|hiker|hike|fell running|cliff|ravine|cave|mineshaft|abseil|moorland", re.I)),
     ("collapse", re.compile(r"collapse|cave-in|landslide|sinkhole", re.I)),
     ("collision", re.compile(r"collid|collision|\brtc\b|road accident|crash|rollover|overturn|vehicle.*(hit|accident)|hit and run|hit by|struck by|\bstruck\b|car into|cyclist hit", re.I)),
@@ -189,6 +200,7 @@ def build(source: Path, root: Path) -> None:
         entry={
             "mission_id":sid,"slot_id":slot_id,"name":record["name"],
             "categories":record.get("mission_categories",[]),**classification,**signature,
+            "chassis":chassis_for(classification["family"]),"scene_code":scene_code_for(str(record.get("name", "")), slot_id),
         }
         manifest_records.append(entry); groups[slot_id].append(entry)
 
@@ -207,8 +219,8 @@ def build(source: Path, root: Path) -> None:
         raise SystemExit(f"Inactive MissionChief slots are not declared as legacy or provisional: {uncovered}")
 
     slot_specs=[
-        {"slot_id":"handoff","name":"Hand-off Mission","source_kind":"special","mission_ids":[],"variant_count":0,"level":2,"score":0.0,"components":{},"primary_service":"mixed","services":["mixed"],"family":"response","modifier":"response","subject":"response","signature":"response:response:response","categories":[]},
-        {"slot_id":"alliance_custom","name":"Custom Alliance Mission","source_kind":"special","mission_ids":[],"variant_count":0,"level":3,"score":0.0,"components":{},"primary_service":"mixed","services":["mixed"],"family":"response","modifier":"response","subject":"response","signature":"response:response:response","categories":[]},
+        {"slot_id":"handoff","name":"Hand-off Mission","source_kind":"special","mission_ids":[],"variant_count":0,"level":2,"score":0.0,"components":{},"primary_service":"mixed","services":["mixed"],"family":"response","modifier":"response","subject":"response","signature":"response:response:response","chassis":chassis_for("response"),"scene_code":scene_code_for("Hand-off Mission", "handoff"),"categories":[]},
+        {"slot_id":"alliance_custom","name":"Custom Alliance Mission","source_kind":"special","mission_ids":[],"variant_count":0,"level":3,"score":0.0,"components":{},"primary_service":"mixed","services":["mixed"],"family":"response","modifier":"response","subject":"response","signature":"response:response:response","chassis":chassis_for("response"),"scene_code":scene_code_for("Custom Alliance Mission", "alliance_custom"),"categories":[]},
     ]
     for slot_id in numeric_slots:
         members=groups[slot_id]
@@ -220,6 +232,7 @@ def build(source: Path, root: Path) -> None:
                 "variant_count":len(members),"level":maximum["level"],"score":maximum["score"],"components":maximum["components"],
                 "max_level_source_mission_id":maximum["mission_id"],"primary_service":canonical["primary_service"],"services":canonical["services"],
                 "family":canonical["family"],"modifier":canonical["modifier"],"subject":canonical["subject"],"signature":canonical["signature"],
+                "chassis":chassis_for(canonical["family"]),"scene_code":scene_code_for(canonical["name"], slot_id),
                 "categories":sorted({category for member in members for category in member["categories"]}),
             })
         elif slot_id in provisional:
@@ -229,7 +242,7 @@ def build(source: Path, root: Path) -> None:
                 "slot_id":slot_id,"name":retained["name"],"source_kind":"provisional","mission_ids":[],"variant_count":0,
                 "level":retained["level"],"score":0.0,"components":{},"max_level_source_mission_id":None,
                 "primary_service":retained["primary_service"],"services":retained["services"],"family":retained["family"],
-                **retained_signature,"categories":retained.get("categories",[]),"provisional_rationale":retained["rationale"],
+                **retained_signature,"chassis":chassis_for(retained["family"]),"scene_code":scene_code_for(retained["name"], slot_id),"categories":retained.get("categories",[]),"provisional_rationale":retained["rationale"],
             })
         else:
             retained=legacy[slot_id]
@@ -240,7 +253,7 @@ def build(source: Path, root: Path) -> None:
                 "slot_id":slot_id,"name":retained["name"],"source_kind":"legacy","mission_ids":[],"variant_count":0,
                 "level":retained["level"],"score":classification["score"],"components":classification["components"],
                 "max_level_source_mission_id":None,"primary_service":classification["primary_service"],"services":classification["services"],
-                "family":classification["family"],**retained_signature,"categories":[],
+                "family":classification["family"],**retained_signature,"chassis":chassis_for(classification["family"]),"scene_code":scene_code_for(retained["name"], slot_id),"categories":[],
             })
 
     manifest_slots=[]
@@ -257,16 +270,18 @@ def build(source: Path, root: Path) -> None:
                 slot["family"],
                 slot["modifier"],
                 slot["subject"],
+                slot["name"],
+                slot["slot_id"],
             )
             icon.save(path, optimize=True)
             files[state]=path.relative_to(root).as_posix()
         manifest_slots.append({"order":index,**slot,"files":files})
 
     generated = {
-        "schema_version":2,
+        "schema_version":4,
         "project":"UK Emergency Response Icons Reborn 2026",
-        "style_version":"2.0",
-        "style_features":["mission_signature","multi_service_rail","shape_coded_state","optical_level_shield"],
+        "style_version":STYLE_VERSION,
+        "style_features":STYLE_FEATURES,
         "catalogue_record_count":len(records),
         "official_slot_count":len(numeric_slots),
         "active_slot_count":active_slot_count,
@@ -285,7 +300,7 @@ def build(source: Path, root: Path) -> None:
     (root/"data").mkdir(exist_ok=True)
     (root/"data"/"mission-manifest.json").write_text(json.dumps(generated,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     profile={
-        "schema_version":2,"style_version":"2.0","thresholds":{"1":"score < 4.2","2":"4.2 <= score < 10","3":"10 <= score < 21","4":"21 <= score < 50","5":"score >= 50"},
+        "schema_version":4,"style_version":STYLE_VERSION,"thresholds":{"1":"score < 4.2","2":"4.2 <= score < 10","3":"10 <= score < 21","4":"21 <= score < 50","5":"score >= 50"},
         "slot_level_distribution":dict(sorted(Counter(str(r["level"]) for r in manifest_slots).items())),
         "record_level_distribution":dict(sorted(Counter(str(r["level"]) for r in manifest_records).items())),
         "family_distribution":dict(sorted(Counter(r["family"] for r in manifest_slots).items())),
@@ -297,8 +312,8 @@ def build(source: Path, root: Path) -> None:
     }
     (root/"data"/"classifier-profile.json").write_text(json.dumps(profile,indent=2)+"\n",encoding="utf-8")
     with (root/"data"/"mission-manifest.csv").open("w",newline="",encoding="utf-8") as fh:
-        writer=csv.writer(fh,lineterminator="\n"); writer.writerow(["order","slot_id","name","variant_count","mission_ids","level","score","primary_service","family","modifier","subject","signature","red","yellow","green"])
-        for r in manifest_slots: writer.writerow([r["order"],r["slot_id"],r["name"],r["variant_count"]," ".join(r["mission_ids"]),r["level"],r["score"],r["primary_service"],r["family"],r["modifier"],r["subject"],r["signature"],r["files"]["red"],r["files"]["yellow"],r["files"]["green"]])
+        writer=csv.writer(fh,lineterminator="\n"); writer.writerow(["order","slot_id","name","variant_count","mission_ids","level","score","primary_service","family","modifier","subject","signature","chassis","scene_code","red","yellow","green"])
+        for r in manifest_slots: writer.writerow([r["order"],r["slot_id"],r["name"],r["variant_count"]," ".join(r["mission_ids"]),r["level"],r["score"],r["primary_service"],r["family"],r["modifier"],r["subject"],r["signature"],r["chassis"],r["scene_code"],r["files"]["red"],r["files"]["yellow"],r["files"]["green"]])
     print(f"Mapped {len(records)} official records to {len(numeric_slots)} native slots and rendered {len(manifest_slots)*3} images")
 
 
