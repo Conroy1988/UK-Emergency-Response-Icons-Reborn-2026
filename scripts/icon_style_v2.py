@@ -100,7 +100,7 @@ SUBJECT_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("cyclist", re.compile(r"\b(?:cyclist|bicycle|bike rider)\b", re.I)),
     ("vehicle", re.compile(r"\b(?:car|vehicle|van|caravan|camper)\b", re.I)),
     ("rail", re.compile(r"\b(?:train|tram|locomotive)\b|\brail(?:way)?\b", re.I)),
-    ("aircraft", re.compile(r"\b(?:aircraft|aeroplane|airplane|plane|helicopter|airfield|airport|runway)\b", re.I)),
+    ("aircraft", re.compile(r"\b(?:aircraft|aeroplane|airplane|plane|helicopter|airfield|airport|airside|aviation|runway)\b", re.I)),
     ("vessel", re.compile(r"boat|ship|vessel|yacht|canoe|kayak|lifeboat|jet ski|ferry", re.I)),
     ("water", re.compile(r"\b(?:water|sea|beach|river|harbour|offshore)\b|coast(?:line)?|drown|swim|flood", re.I)),
     ("animal", re.compile(r"\b(?:animal|dog|cat|horse|swan|bird|livestock|deer|rabbit|cow|sheep|goat|snake|reindeer|stable|stables)\b", re.I)),
@@ -157,6 +157,10 @@ def _modifier_for(name: str, family: str) -> str:
         return "water"
     if re.search(r"weapon|knife|firearm|gun|shoot|armed", name, re.I):
         return "weapon"
+    if family == "aircraft" and re.search(r"tres+pass", name, re.I):
+        return "trespass"
+    if family == "crime" and re.search(r"plantation|cannabis|\bdrugs?\b", name, re.I):
+        return "drugs"
     if re.search(r"theft|stolen|robbery|burglary|shoplifting|heist|pickpocket|fraud|forgery", name, re.I):
         return "theft"
     if re.search(r"fight|brawl|riot|violence|assault|aggressive|disorder", name, re.I):

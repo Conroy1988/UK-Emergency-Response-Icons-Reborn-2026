@@ -93,7 +93,7 @@ def validate(root: Path) -> dict:
     scene_root=root/"assets"/"scenes"
     scene_files=list(scene_root.glob("*.png"))
     expected_scenes={re.sub(r"[^a-z0-9]+","--",signature.lower()).strip("-")+".png" for signature in signatures}
-    check("premium_scene_master_count",len(scene_files)==len(expected_scenes)==264,f"{len(scene_files)} files · {len(expected_scenes)} expected")
+    check("premium_scene_master_count",len(scene_files)==len(expected_scenes)==267,f"{len(scene_files)} files · {len(expected_scenes)} expected")
     check("premium_scene_master_coverage",{path.name for path in scene_files}==expected_scenes,f"{len({path.name for path in scene_files}&expected_scenes)}/{len(expected_scenes)} signatures")
 
     seen_paths=set(); pixel_fail=[]; state_fail=[]; visibility_fail=[]; hashes=[]; red_hashes=[]; complexities=[]

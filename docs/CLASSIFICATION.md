@@ -43,7 +43,7 @@ the canonical mission title and classified service data:
 - contextual subject for the person, vehicle, premises, environment or
   infrastructure involved.
 
-The semantic signature selects one of 264 curated illustrated scene masters.
+The semantic signature selects one of 267 curated illustrated scene masters.
 Required services populate the lower lightbar independently of those three
 semantic layers. A stable slot/title scene code supplies subordinate anti-twin
 rim and base marks without changing the mission meaning.

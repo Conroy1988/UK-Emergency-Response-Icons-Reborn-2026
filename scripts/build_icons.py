@@ -41,7 +41,7 @@ MODERATE_TERMS = re.compile(
 FAMILY_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("hazmat", re.compile(r"nuclear|cbrne|chemical|chlorine|ammonia|gas leak|hazard|poison|fuel spill|tanker spill|carbon monoxide", re.I)),
     ("eod", re.compile(r"bomb|grenade|eod|explosive|ordnance|munition|suspicious package|firework", re.I)),
-    ("aircraft", re.compile(r"\b(?:aircraft|airfield|airport|helicopter|runway|plane)\b|bird strike", re.I)),
+    ("aircraft", re.compile(r"\b(?:aircraft|airfield|airport|airside|aviation|helicopter|runway|plane)\b|bird strike", re.I)),
     ("rail", re.compile(r"\b(?:train|tram|subway|locomotive)\b|\brail(?:way)?\b", re.I)),
     ("marine", re.compile(r"\b(?:boat|ship|vessel|sea|coast|coastguard|beach|tide|canoe|kayak|lifeboat|river|swimmer|surfer)\b|drown|water rescue|offshore|harbour", re.I)),
     ("mountain", re.compile(r"mountain|hiker|hike|fell running|cliff|ravine|cave|mineshaft|abseil|moorland", re.I)),

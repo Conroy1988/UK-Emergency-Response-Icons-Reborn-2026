@@ -2,40 +2,40 @@
   "schema_version": 4,
   "style_version": "4.0",
   "all_passed": true,
-  "catalogue_record_count": 1066,
-  "official_slot_count": 869,
-  "active_slot_count": 830,
+  "catalogue_record_count": 1069,
+  "official_slot_count": 872,
+  "active_slot_count": 833,
   "legacy_slot_count": 37,
   "provisional_slot_count": 2,
-  "published_official_slot_count": 867,
+  "published_official_slot_count": 870,
   "special_slot_count": 2,
-  "upload_slot_count": 871,
-  "image_count": 2613,
+  "upload_slot_count": 874,
+  "image_count": 2622,
   "level_distribution": {
     "1": 208,
-    "2": 212,
-    "3": 203,
+    "2": 213,
+    "3": 205,
     "4": 177,
     "5": 71
   },
   "family_distribution": {
-    "aircraft": 15,
+    "aircraft": 16,
     "animal": 14,
     "cardiac": 7,
     "collapse": 10,
     "collision": 32,
-    "crime": 37,
+    "crime": 38,
     "crowd": 43,
     "eod": 34,
-    "fire": 272,
+    "fire": 273,
     "hazmat": 26,
     "marine": 32,
     "medical": 131,
-    "mountain": 11,
+    "mountain": 12,
     "police": 98,
     "rail": 39,
     "rescue": 29,
-    "response": 3,
+    "response": 2,
     "utilities": 8,
     "weather": 30
   },
@@ -43,27 +43,27 @@
     {
       "name": "catalogue_record_count",
       "passed": true,
-      "detail": "1066"
+      "detail": "1069"
     },
     {
       "name": "unique_mission_ids",
       "passed": true,
-      "detail": "1066"
+      "detail": "1069"
     },
     {
       "name": "official_slot_count",
       "passed": true,
-      "detail": "869"
+      "detail": "872"
     },
     {
       "name": "published_official_slot_count",
       "passed": true,
-      "detail": "867"
+      "detail": "870"
     },
     {
       "name": "active_slot_count",
       "passed": true,
-      "detail": "830"
+      "detail": "833"
     },
     {
       "name": "legacy_slot_count",
@@ -88,17 +88,17 @@
     {
       "name": "unique_upload_slots",
       "passed": true,
-      "detail": "871"
+      "detail": "874"
     },
     {
       "name": "every_record_mapped_once",
       "passed": true,
-      "detail": "1066 mappings"
+      "detail": "1069 mappings"
     },
     {
       "name": "all_levels_present",
       "passed": true,
-      "detail": "Counter({2: 212, 1: 208, 3: 203, 4: 177, 5: 71})"
+      "detail": "Counter({2: 213, 1: 208, 3: 205, 4: 177, 5: 71})"
     },
     {
       "name": "all_states_declared",
@@ -118,22 +118,22 @@
     {
       "name": "mission_signature_coverage",
       "passed": true,
-      "detail": "871 signatures"
+      "detail": "874 signatures"
     },
     {
       "name": "semantic_signature_depth",
       "passed": true,
-      "detail": "264 distinct semantic compositions"
+      "detail": "267 distinct semantic compositions"
     },
     {
       "name": "family_chassis_coverage",
       "passed": true,
-      "detail": "871 slots \u00b7 13 chassis"
+      "detail": "874 slots \u00b7 13 chassis"
     },
     {
       "name": "incident_scene_code_coverage",
       "passed": true,
-      "detail": "871 slots \u00b7 871 distinct codes"
+      "detail": "874 slots \u00b7 874 distinct codes"
     },
     {
       "name": "semantic_token_boundaries",
@@ -148,17 +148,17 @@
     {
       "name": "premium_scene_master_count",
       "passed": true,
-      "detail": "264 files \u00b7 264 expected"
+      "detail": "267 files \u00b7 267 expected"
     },
     {
       "name": "premium_scene_master_coverage",
       "passed": true,
-      "detail": "264/264 signatures"
+      "detail": "267/267 signatures"
     },
     {
       "name": "three_files_per_slot",
       "passed": true,
-      "detail": "2613 files"
+      "detail": "2622 files"
     },
     {
       "name": "png_integrity",
@@ -178,12 +178,12 @@
     {
       "name": "unique_render_hashes",
       "passed": true,
-      "detail": "2613 distinct renders"
+      "detail": "2622 distinct renders"
     },
     {
       "name": "mission_aware_red_renders",
       "passed": true,
-      "detail": "871 distinct red-state renders"
+      "detail": "874 distinct red-state renders"
     },
     {
       "name": "premium_scene_colour_depth",
