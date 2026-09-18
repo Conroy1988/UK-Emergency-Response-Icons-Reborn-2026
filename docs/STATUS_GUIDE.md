@@ -71,15 +71,17 @@ Green does not guarantee completion, payout or removal from the map.
 - GitHub Operational V4 publication: **complete**; PR #12 was squash-merged as
   commit `dcd9506115839e2c72d1f55a4fc6d9e35069f501` and release workflow run
   `32471758841` completed successfully.
-- Live MissionChief pack: **Operational V4 synced on 2026-08-21**, 871 rows and
-  2,613 images.
-- Operational V4 repository build: **complete and QA passing**, 871 rows and
-  2,613 generated images backed by 264 scene masters.
+- Live MissionChief pack: **Operational V4 synced on 2026-09-17**, 874 rows and
+  2,622 images.
+- Operational V4 repository build: **complete and QA passing**, 874 rows and
+  2,622 generated images backed by 267 scene masters.
 - V4 live upload queue: **clear; 0 replacements pending**.
-- Live audit: **2,613/2,613 fresh server timestamps, 2,613/2,613 expected
-  filenames and state paths, zero mismatches**.
+- Live delta audit: **15/15 changed state images returned fresh server
+  timestamps and the expected filenames/state paths; all three new rows have
+  complete red, amber and green images**.
 
 Passing repository QA, a successful live-pack audit and a published GitHub
-release are separate facts. All three Operational V4 gates are complete. The
-published ZIP SHA-256 is
+release are separate facts. The repository and live pack include the 2026-09-17
+mission delta; the latest public archive remains the v4.0.0 August baseline.
+Its published ZIP SHA-256 is
 `e3a2a012a4f100c13a16ed572696867c19483522b77d3c6449b9a8b723e5e741`.

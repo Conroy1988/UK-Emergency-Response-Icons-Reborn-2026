@@ -9,7 +9,7 @@ separate readable signals.
 
 - Canvas: 64 × 83 pixels, transparent RGBA.
 - Output: one red, amber and green PNG for every upload row.
-- Source art: 264 curated 256 × 256 RGBA illustrated scene masters.
+- Source art: 267 curated 256 × 256 RGBA illustrated scene masters.
 - Renderer: deterministic Python/Pillow composition with no copied game assets,
   registrations or external logos.
 - Review sizes: native 64 × 83, enlarged audit sheets and simulated 32 × 42
@@ -34,7 +34,7 @@ The canonical title and classified service data produce a semantic signature:
 family:modifier:subject
 ```
 
-Every one of the 264 current signatures has a corresponding scene master under
+Every one of the 267 current signatures has a corresponding scene master under
 `assets/scenes/`. Closely related mission rows intentionally share their
 semantic scene; their fixed level, service mix and native-row identity code keep
 the final outputs distinct. Missing scene masters are a hard build/QA failure.
@@ -88,7 +88,7 @@ The number estimates gameplay burden, not live progress or clinical triage.
 
 `scene_code_for(name, slot_id)` derives a stable six-character code from the
 native slot and canonical title. Subordinate rim and base marks encode it. The
-V4 build therefore has 871 distinct red-state renders and 2,613 distinct PNG
+V4 build therefore has 874 distinct red-state renders and 2,622 distinct PNG
 streams while preserving shared artwork for genuinely related semantics.
 
 ## Quality gates
@@ -96,12 +96,12 @@ streams while preserving shared artwork for genuinely related semantics.
 The pack cannot pass validation unless all of these hold:
 
 - every catalogue record maps exactly once;
-- all 871 upload rows have red, amber and green files;
-- all 264 semantic signatures have a scene master;
+- all 874 upload rows have red, amber and green files;
+- all 267 semantic signatures have a scene master;
 - every output is a decodable 64 × 83 RGBA PNG with transparent corners;
 - every scene clears minimum colour complexity and visible coverage;
 - state signal and shape variants remain distinct;
-- all 2,613 PNG byte streams are unique;
+- all 2,622 PNG byte streams are unique;
 - contrast survives light, dark, satellite and greyscale backgrounds at 50%.
 
 ![V4 dense-map audit](../assets/previews/v4-dense-map-audit.png)

@@ -10,15 +10,15 @@
     "integrated_response_shield",
     "native_row_identity_code"
   ],
-  "catalogue_record_count": 1066,
-  "official_slot_count": 869,
-  "active_slot_count": 830,
+  "catalogue_record_count": 1069,
+  "official_slot_count": 872,
+  "active_slot_count": 833,
   "legacy_slot_count": 37,
   "provisional_slot_count": 2,
-  "published_official_slot_count": 867,
+  "published_official_slot_count": 870,
   "special_slot_count": 2,
-  "upload_slot_count": 871,
-  "catalogue_sha256": "5d641a0ffdb6f0c899ade769bff01f73a6bc4f6dab7f5c0bf567d832a75f1e63",
+  "upload_slot_count": 874,
+  "catalogue_sha256": "7d4fb912a0a228e8e5c7dcc237454c10c2c252cb0e8f8f5ad5298f46bd99871e",
   "canvas": {
     "width": 64,
     "height": 83
@@ -31943,6 +31943,63 @@
       "scene_code": "C4C9F0"
     },
     {
+      "mission_id": "866",
+      "slot_id": "866",
+      "name": "Ineffective Breathing",
+      "categories": [
+        "ambulance"
+      ],
+      "level": 3,
+      "score": 13.02,
+      "components": {
+        "resources": 0.0,
+        "patients": 0.5,
+        "clinical_acuity": 11.0,
+        "services": 0.0,
+        "credits": 1.52,
+        "hazards": 0.0
+      },
+      "primary_service": "ambulance",
+      "services": [
+        "ambulance"
+      ],
+      "family": "medical",
+      "modifier": "lungs",
+      "subject": "response",
+      "signature": "medical:lungs:response",
+      "chassis": "clinical_capsule",
+      "scene_code": "5FB710"
+    },
+    {
+      "mission_id": "867",
+      "slot_id": "867",
+      "name": "Multi Agency Training Exercise (Small)",
+      "categories": [
+        "fire",
+        "urban"
+      ],
+      "level": 3,
+      "score": 11.3,
+      "components": {
+        "resources": 6.65,
+        "patients": 0.0,
+        "clinical_acuity": 0.0,
+        "services": 0.0,
+        "credits": 4.65,
+        "hazards": 0.0
+      },
+      "primary_service": "fire",
+      "services": [
+        "fire"
+      ],
+      "family": "fire",
+      "modifier": "fire",
+      "subject": "response",
+      "signature": "fire:fire:response",
+      "chassis": "ember_crown",
+      "scene_code": "4ABFB5"
+    },
+    {
       "mission_id": "868",
       "slot_id": "868",
       "name": "Lost Child at Beach - Coastguard Search",
@@ -31971,6 +32028,35 @@
       "signature": "marine:search:child",
       "chassis": "wave_keel",
       "scene_code": "CD3989"
+    },
+    {
+      "mission_id": "869",
+      "slot_id": "869",
+      "name": "Airside Tresspasser",
+      "categories": [
+        "police"
+      ],
+      "level": 2,
+      "score": 8.38,
+      "components": {
+        "resources": 4.65,
+        "patients": 0.0,
+        "clinical_acuity": 0.0,
+        "services": 0.0,
+        "credits": 3.73,
+        "hazards": 0.0
+      },
+      "primary_service": "police",
+      "services": [
+        "air",
+        "police"
+      ],
+      "family": "aircraft",
+      "modifier": "trespass",
+      "subject": "aircraft",
+      "signature": "aircraft:trespass:aircraft",
+      "chassis": "wing_frame",
+      "scene_code": "ED4434"
     }
   ],
   "slots": [
@@ -67107,13 +67193,22 @@
       "order": 869,
       "slot_id": "866",
       "name": "Ineffective Breathing",
-      "source_kind": "provisional",
-      "mission_ids": [],
-      "variant_count": 0,
-      "level": 2,
-      "score": 0.0,
-      "components": {},
-      "max_level_source_mission_id": null,
+      "source_kind": "official",
+      "mission_ids": [
+        "866"
+      ],
+      "variant_count": 1,
+      "level": 3,
+      "score": 13.02,
+      "components": {
+        "resources": 0.0,
+        "patients": 0.5,
+        "clinical_acuity": 11.0,
+        "services": 0.0,
+        "credits": 1.52,
+        "hazards": 0.0
+      },
+      "max_level_source_mission_id": "866",
       "primary_service": "ambulance",
       "services": [
         "ambulance"
@@ -67127,7 +67222,6 @@
       "categories": [
         "ambulance"
       ],
-      "provisional_rationale": "MissionChief live-row name verified; conservative breathing-emergency classification pending official requirements.",
       "files": {
         "red": "assets/icons/red/0869--866--ineffective-breathing.png",
         "yellow": "assets/icons/yellow/0869--866--ineffective-breathing.png",
@@ -67138,32 +67232,36 @@
       "order": 870,
       "slot_id": "867",
       "name": "Multi Agency Training Exercise (Small)",
-      "source_kind": "provisional",
-      "mission_ids": [],
-      "variant_count": 0,
-      "level": 3,
-      "score": 0.0,
-      "components": {},
-      "max_level_source_mission_id": null,
-      "primary_service": "mixed",
-      "services": [
-        "fire",
-        "police",
-        "ambulance"
+      "source_kind": "official",
+      "mission_ids": [
+        "867"
       ],
-      "family": "response",
-      "modifier": "response",
+      "variant_count": 1,
+      "level": 3,
+      "score": 11.3,
+      "components": {
+        "resources": 6.65,
+        "patients": 0.0,
+        "clinical_acuity": 0.0,
+        "services": 0.0,
+        "credits": 4.65,
+        "hazards": 0.0
+      },
+      "max_level_source_mission_id": "867",
+      "primary_service": "fire",
+      "services": [
+        "fire"
+      ],
+      "family": "fire",
+      "modifier": "fire",
       "subject": "response",
-      "signature": "response:response:response",
-      "chassis": "response_roundel",
+      "signature": "fire:fire:response",
+      "chassis": "ember_crown",
       "scene_code": "4ABFB5",
       "categories": [
         "fire",
-        "police",
-        "ambulance",
-        "training"
+        "urban"
       ],
-      "provisional_rationale": "MissionChief live-row name verified on 2026-08-21; conservative three-service training classification pending official requirements.",
       "files": {
         "red": "assets/icons/red/0870--867--multi-agency-training-exercise-small.png",
         "yellow": "assets/icons/yellow/0870--867--multi-agency-training-exercise-small.png",
@@ -67209,6 +67307,110 @@
         "red": "assets/icons/red/0871--868--lost-child-at-beach-coastguard-search.png",
         "yellow": "assets/icons/yellow/0871--868--lost-child-at-beach-coastguard-search.png",
         "green": "assets/icons/green/0871--868--lost-child-at-beach-coastguard-search.png"
+      }
+    },
+    {
+      "order": 872,
+      "slot_id": "869",
+      "name": "Airside Tresspasser",
+      "source_kind": "official",
+      "mission_ids": [
+        "869"
+      ],
+      "variant_count": 1,
+      "level": 2,
+      "score": 8.38,
+      "components": {
+        "resources": 4.65,
+        "patients": 0.0,
+        "clinical_acuity": 0.0,
+        "services": 0.0,
+        "credits": 3.73,
+        "hazards": 0.0
+      },
+      "max_level_source_mission_id": "869",
+      "primary_service": "police",
+      "services": [
+        "air",
+        "police"
+      ],
+      "family": "aircraft",
+      "modifier": "trespass",
+      "subject": "aircraft",
+      "signature": "aircraft:trespass:aircraft",
+      "chassis": "wing_frame",
+      "scene_code": "ED4434",
+      "categories": [
+        "police"
+      ],
+      "files": {
+        "red": "assets/icons/red/0872--869--airside-tresspasser.png",
+        "yellow": "assets/icons/yellow/0872--869--airside-tresspasser.png",
+        "green": "assets/icons/green/0872--869--airside-tresspasser.png"
+      }
+    },
+    {
+      "order": 873,
+      "slot_id": "870",
+      "name": "Illegal Plantation (Medium)",
+      "source_kind": "provisional",
+      "mission_ids": [],
+      "variant_count": 0,
+      "level": 3,
+      "score": 0.0,
+      "components": {},
+      "max_level_source_mission_id": null,
+      "primary_service": "police",
+      "services": [
+        "police"
+      ],
+      "family": "crime",
+      "modifier": "drugs",
+      "subject": "industrial",
+      "signature": "crime:drugs:industrial",
+      "chassis": "command_shield",
+      "scene_code": "4138BA",
+      "categories": [
+        "police"
+      ],
+      "provisional_rationale": "MissionChief live-row name verified on 2026-09-17; medium-scale police response classification pending official requirements.",
+      "files": {
+        "red": "assets/icons/red/0873--870--illegal-plantation-medium.png",
+        "yellow": "assets/icons/yellow/0873--870--illegal-plantation-medium.png",
+        "green": "assets/icons/green/0873--870--illegal-plantation-medium.png"
+      }
+    },
+    {
+      "order": 874,
+      "slot_id": "871",
+      "name": "Dog Over Cliff",
+      "source_kind": "provisional",
+      "mission_ids": [],
+      "variant_count": 0,
+      "level": 2,
+      "score": 0.0,
+      "components": {},
+      "max_level_source_mission_id": null,
+      "primary_service": "marine",
+      "services": [
+        "marine"
+      ],
+      "family": "mountain",
+      "modifier": "height",
+      "subject": "animal",
+      "signature": "mountain:height:animal",
+      "chassis": "ridge_frame",
+      "scene_code": "FE4DFC",
+      "categories": [
+        "coastal",
+        "rescue",
+        "animal"
+      ],
+      "provisional_rationale": "MissionChief live-row name verified on 2026-09-17; conservative coastguard cliff-rescue classification pending official requirements.",
+      "files": {
+        "red": "assets/icons/red/0874--871--dog-over-cliff.png",
+        "yellow": "assets/icons/yellow/0874--871--dog-over-cliff.png",
+        "green": "assets/icons/green/0874--871--dog-over-cliff.png"
       }
     }
   ]

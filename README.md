@@ -1,8 +1,8 @@
 # UK Emergency Response Icons Reborn 2026
 
 [![Latest release](https://img.shields.io/badge/latest_release-v4.0.0-22c55e)](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0)
-[![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C066-6d5dfc)](data/mission-manifest.json)
-[![Graphics](https://img.shields.io/badge/status_graphics-2%2C613-22c55e)](GALLERY.md)
+[![Mission catalogue](https://img.shields.io/badge/UK_missions-1%2C069-6d5dfc)](data/mission-manifest.json)
+[![Graphics](https://img.shields.io/badge/status_graphics-2%2C622-22c55e)](GALLERY.md)
 [![Icon system](https://img.shields.io/badge/icon_system-Operational_V4_live-22c55e)](docs/STYLE_GUIDE.md)
 [![QA](https://img.shields.io/badge/automated_QA-passing-22c55e)](data/qa-report.json)
 [![Licence](https://img.shields.io/badge/artwork-CC_BY--NC--SA_4.0-f59e0b)](LICENSE.md)
@@ -15,6 +15,7 @@ green map states.
 [Use the pack on MissionChief](https://www.missionchief.co.uk/mission_graphics/539) ·
 [Download v4.0.0](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0) ·
 [Browse all mission rows](GALLERY.md) ·
+[September 2026 mission update](docs/UPDATE_2026-09-17.md) ·
 [MissionChief UK guide](https://tkb-gaming.scot/games/missionchief/guides/) ·
 [TKB MissionChief scripts](https://tkb-gaming.scot/mission-chief-scripts/)
 
@@ -24,14 +25,15 @@ green map states.
 
 | Area | Status | Exact meaning |
 |---|---|---|
-| Live MissionChief pack | **Operational V4 synced** | On 2026-08-21 all 871 live rows and all 2,613 red/amber/green images were replaced and audited against this manifest. |
-| Repository publication | **Operational V4 published** | [PR #12](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/pull/12) was squash-merged as commit [`dcd9506`](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/commit/dcd9506115839e2c72d1f55a4fc6d9e35069f501). |
-| Latest public release | **v4.0.0** | The [public release](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0) contains the versioned ZIP and SHA-256 file; the release workflow completed successfully. |
+| Live MissionChief pack | **Operational V4 synced** | On 2026-09-17 all 874 live rows had red, amber and green images; the five changed rows were audited against the expected filenames and state paths. |
+| Repository publication | **Operational V4 current** | The [September 2026 mission update](docs/UPDATE_2026-09-17.md) adds native slots 869–871 and replaces provisional metadata for slots 866–867. |
+| Latest public release | **v4.0.0 baseline** | The [public release](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0) remains the latest checksummed archive and predates the 2026-09-17 mission delta. |
 | Automated V4 QA | **Passing** | Coverage, mappings, scene-master coverage, PNG integrity, colour depth, transparency, state separation, unique output and map visibility pass. |
-| V4 upload queue | **Clear · 0 replacements** | The live audit found 871 rows, 2,613 fresh server timestamps, 2,613 expected filenames/state paths and zero mismatches. |
+| V4 upload queue | **Clear · 0 replacements** | MissionChief accepted all 15 changed state images with the expected filenames and fresh server timestamps; the three new rows no longer report missing pictures. |
 
 Repository QA, GitHub release publication and the live MissionChief upload are
-three separate gates. All three Operational V4 gates are complete.
+three separate gates. The repository and live pack are current; the downloadable
+v4.0.0 archive remains the preserved August baseline.
 
 Normal players do not need to download a ZIP or upload individual files. Open
 the [live graphics pack](https://www.missionchief.co.uk/mission_graphics/539)
@@ -40,12 +42,12 @@ inspection, preservation and maintainers.
 
 ## What makes V4 different
 
-- **264 curated illustrated scene masters** cover every current semantic
+- **267 curated illustrated scene masters** cover every current semantic
   family/modifier/subject composition instead of substituting generic centre
   pictograms.
 - **64 × 83 native RGBA output** preserves the approved scene detail and remains
   practical as a MissionChief map marker.
-- **2,613 unique PNG streams** ensure every upload row and operational state is
+- **2,622 unique PNG streams** ensure every upload row and operational state is
   deterministic and independently auditable.
 - **Shape-coded state choreography** uses red alert pods, amber movement
   chevrons and green coverage brackets/tick, so status does not rely on colour
@@ -103,11 +105,11 @@ MissionChief switches the three images automatically. See
 
 ## Complete coverage
 
-- 1,066/1,066 current official UK catalogue records mapped.
-- 869/869 numbered native mission slots, plus Hand-off and Custom Alliance.
-- 871 upload rows and 2,613 transparent 64 × 83 RGBA PNGs.
-- 264 semantic compositions backed by 264 curated scene masters.
-- 871 unique row codes and 2,613 unique final PNG byte streams.
+- 1,069/1,069 current official UK catalogue records mapped.
+- 872/872 numbered native mission slots, plus Hand-off and Custom Alliance.
+- 874 upload rows and 2,622 transparent 64 × 83 RGBA PNGs.
+- 267 semantic compositions backed by 267 curated scene masters.
+- 874 unique row codes and 2,622 unique final PNG byte streams.
 - Two visible rows remain conservatively provisioned until their complete
   official catalogue metadata is published.
 - Light, dark, satellite and greyscale contrast checked at native and 50% scale.
@@ -116,7 +118,7 @@ Official variants retain stable MissionChief IDs and map to their native base
 slot. Each row takes the highest response level among its current variants so
 escalation is never understated.
 
-## Download and verify v4.0.0
+## Download and verify the v4.0.0 baseline
 
 - [Release page and notes](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/tag/v4.0.0)
 - [Download the verified ZIP](https://github.com/Conroy1988/UK-Emergency-Response-Icons-Reborn-2026/releases/download/v4.0.0/UK-Emergency-Response-Icons-Reborn-2026-v4.0.0.zip)
@@ -136,12 +138,13 @@ python scripts/sync_catalogue.py
 python scripts/build_icons.py
 python scripts/validate_pack.py
 python scripts/build_previews.py
-PACK_VERSION=4.0.0 python scripts/package_release.py
+PACK_VERSION=dev python scripts/package_release.py
 ```
 
 See [the classification model](docs/CLASSIFICATION.md),
 [the icon style guide](docs/STYLE_GUIDE.md), and
-[the V4 release notes](docs/RELEASE_v4.0.0.md).
+[the V4 release notes](docs/RELEASE_v4.0.0.md), and
+[the September 2026 mission update](docs/UPDATE_2026-09-17.md).
 
 ## Licence
 

@@ -3,24 +3,24 @@
   "status": "MissionChief-native rows visible before catalogue metadata publication",
   "slots": [
     {
-      "slot_id": "866",
-      "name": "Ineffective Breathing",
-      "level": 2,
-      "primary_service": "ambulance",
-      "services": ["ambulance"],
-      "family": "medical",
-      "categories": ["ambulance"],
-      "rationale": "MissionChief live-row name verified; conservative breathing-emergency classification pending official requirements."
+      "slot_id": "870",
+      "name": "Illegal Plantation (Medium)",
+      "level": 3,
+      "primary_service": "police",
+      "services": ["police"],
+      "family": "crime",
+      "categories": ["police"],
+      "rationale": "MissionChief live-row name verified on 2026-09-17; medium-scale police response classification pending official requirements."
     },
     {
-      "slot_id": "867",
-      "name": "Multi Agency Training Exercise (Small)",
-      "level": 3,
-      "primary_service": "mixed",
-      "services": ["fire", "police", "ambulance"],
-      "family": "response",
-      "categories": ["fire", "police", "ambulance", "training"],
-      "rationale": "MissionChief live-row name verified on 2026-08-21; conservative three-service training classification pending official requirements."
+      "slot_id": "871",
+      "name": "Dog Over Cliff",
+      "level": 2,
+      "primary_service": "marine",
+      "services": ["marine"],
+      "family": "mountain",
+      "categories": ["coastal", "rescue", "animal"],
+      "rationale": "MissionChief live-row name verified on 2026-09-17; conservative coastguard cliff-rescue classification pending official requirements."
     }
   ]
 }
